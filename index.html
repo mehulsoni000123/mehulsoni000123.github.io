@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SONIKA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Free apps, Claude skills and guides by Mehul Soni, a video editor who lets Claude build his tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: single dark "editing bay" — glowing red record light, one featured app, a day-by-day guide log like a timeline */
+:root{
+  --ink:#070506;          /* page black, faint red bias */
+  --panel:#110b0c;        /* raised surface */
+  --line:#2a1a1c;         /* hairlines */
+  --text:#f3ecec;         /* primary text */
+  --muted:#a8999a;        /* secondary text */
+  --red:#ff2a3d;          /* signal red */
+  --red-deep:#b3101f;     /* gradient depth */
+  --glow:rgba(255,42,61,.55);
+  --f-display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{background:var(--ink);scroll-behavior:smooth}
+body{background:var(--ink);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* ambient glow */
+.aura{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(60vmax 40vmax at 85% -10%,rgba(255,42,61,.18),transparent 60%),
+             radial-gradient(50vmax 35vmax at -10% 110%,rgba(179,16,31,.16),transparent 60%)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.06;
+  background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px)}
+main,header,footer{position:relative;z-index:1}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(7,5,6,.78);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.mark{font-family:var(--f-display);font-weight:800;font-size:22px;letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.rec{width:10px;height:10px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--glow),0 0 24px var(--glow);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35;box-shadow:0 0 4px var(--glow)}}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:600}
+.navlinks a{text-decoration:none;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding-block:72px 56px;display:grid;gap:28px}
+.tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:10px}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(40px,8vw,92px);line-height:.95;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .hot{color:var(--red);text-shadow:0 0 18px var(--glow),0 0 48px rgba(255,42,61,.35)}
+.note{font-family:var(--f-hand);font-size:clamp(24px,3.4vw,32px);color:var(--text);transform:rotate(-1.5deg);margin:0;max-width:30ch;line-height:1.15}
+.note b{color:var(--red);font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;background:transparent;color:var(--text);font-family:var(--f-body)}
+.btn:hover{transform:translateY(-2px);border-color:var(--red)}
+.btn.primary{background:linear-gradient(180deg,var(--red),var(--red-deep));border-color:transparent;box-shadow:0 0 0 1px rgba(255,42,61,.4),0 8px 30px rgba(255,42,61,.35)}
+.btn.primary:hover{box-shadow:0 0 0 1px var(--red),0 10px 44px rgba(255,42,61,.6)}
+.stats{display:flex;flex-wrap:wrap;gap:28px;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.stats strong{display:block;font-family:var(--f-display);font-size:28px;color:var(--text);font-variant-numeric:tabular-nums}
+
+section{padding-block:56px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+h2{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0;max-width:60ch}
+
+/* featured app */
+.app{position:relative;border-radius:22px;padding:2px;background:linear-gradient(135deg,var(--red),transparent 40%,transparent 60%,var(--red-deep));box-shadow:0 0 60px rgba(255,42,61,.18)}
+.app-in{border-radius:20px;background:var(--panel);padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.app-in>*{min-width:0}
+.app h3{font-family:var(--f-display);font-weight:800;font-size:clamp(30px,5vw,48px);margin:8px 0 10px;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.chip{font-family:var(--f-mono);font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.fine{font-size:13px;color:var(--muted);margin-top:16px}
+/* mock window */
+.win{border-radius:14px;border:1px solid var(--line);background:#0b0708;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.win-bar{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.win-bar i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.win-bar i:first-child{background:var(--red)}
+.win-body{padding:18px;display:grid;gap:12px;font-family:var(--f-mono);font-size:12.5px}
+.field{border:1px solid var(--line);border-radius:8px;padding:10px 12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field .typed{color:var(--text)}
+.caret{display:inline-block;width:7px;height:14px;background:var(--red);vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.row2{display:flex;gap:10px}
+.row2 .field{flex:1}
+.go{border-radius:8px;padding:10px 14px;background:var(--red);color:#fff;font-weight:600;box-shadow:0 0 18px var(--glow)}
+.bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden}
+.bar span{display:block;height:100%;width:72%;background:linear-gradient(90deg,var(--red-deep),var(--red));box-shadow:0 0 12px var(--glow);animation:load 3.2s ease-in-out infinite}
+@keyframes load{0%{width:8%}80%,100%{width:100%}}
+
+/* guides */
+.tools{display:flex;gap:12px;flex-wrap:wrap}
+.search{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:12px 18px;color:var(--text);font:inherit;font-size:15px;width:min(320px,100%)}
+.search::placeholder{color:var(--muted)}
+.log{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.log li{border-bottom:1px solid var(--line)}
+.log a{display:grid;grid-template-columns:84px 1fr auto;gap:18px;align-items:center;padding:18px 6px;text-decoration:none;transition:background .2s,padding .2s}
+.log a>*{min-width:0}
+.log a:hover{background:linear-gradient(90deg,rgba(255,42,61,.10),transparent 70%);padding-left:14px}
+.day{font-family:var(--f-mono);font-size:13px;color:var(--red);font-variant-numeric:tabular-nums}
+.gt{font-family:var(--f-display);font-weight:600;font-size:clamp(17px,2.2vw,21px);line-height:1.25}
+.open{font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
+.log a:hover .open{color:var(--red)}
+.empty{color:var(--muted);padding:24px 6px}
+.new{font-family:var(--f-hand);font-size:20px;color:var(--red);margin-left:8px}
+
+
+/* donate */
+.navdonate{color:var(--red)!important}
+.don{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.don>*{min-width:0}
+.dcard{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;display:grid;gap:14px;align-content:start}
+.dcard h3{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0}
+.dcard p{margin:0;color:var(--muted);font-size:15px}
+.qr{width:180px;max-width:100%;aspect-ratio:1;border-radius:14px;background:#fff;padding:10px;object-fit:contain}
+.upi{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.upi code{font-family:var(--f-mono);font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;word-break:break-all}
+.soon{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:12px;padding:16px}
+.toast{font-size:13px;color:var(--red);min-height:1.2em}
+@media (max-width:760px){.don{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about>*{min-width:0}
+.about p{margin:0 0 14px;max-width:60ch}
+.links{display:flex;flex-direction:column;gap:10px}
+.links a{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:600;transition:border-color .2s,box-shadow .2s}
+.links a span{color:var(--muted);font-family:var(--f-mono);font-size:13px;font-weight:500}
+.links a:hover{border-color:var(--red);box-shadow:0 0 24px rgba(255,42,61,.18)}
+
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:760px){
+  .app-in,.about{grid-template-columns:1fr}
+  .navlinks{gap:14px}
+  .navlinks .hide-s{display:none}
+  .log a{grid-template-columns:62px 1fr;gap:12px}
+  .open{display:none}
+  .hero{padding-block:48px 36px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="aura" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="#top"><span class="rec" aria-hidden="true"></span>SONIKA</a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="#apps">Apps</a>
+      <a href="#guides">Free guides</a>
+      <a class="hide-s" href="#about">About</a>
+      <a class="navdonate" href="#donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="tag"><span class="rec" aria-hidden="true"></span>Recording · 30 days with Claude</div>
+    <h1>Video editor.<br>Not a coder.<br><span class="hot">Free tools.</span></h1>
+    <p class="note">I let Claude build my apps and skills. <b>You get them free</b>, no comment needed.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#apps">Get the downloader</a>
+      <a class="btn" href="#guides">Browse free guides</a>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <section id="apps">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>Apps</h2><p class="sub">Things I built with Claude and Codex for my own editing work. Free for everyone.</p></div>
+      </div>
+      <div id="appList"></div>
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>Free guides &amp; skills</h2><p class="sub">Every reel comes with its prompts, Claude skills and docs. Pick a day.</p></div>
+        <div class="tools"><label class="sr" for="q" hidden>Search guides</label><input id="q" class="search" type="search" placeholder="Search: subtitles, emails, After Effects…"></div>
+      </div>
+      <ul class="log" id="log"></ul>
+    </div>
+  </section>
+
+  <section id="donate">
+    <div class="wrap">
+      <div class="sec-head"><div><h2>Support SONIKA</h2><p class="sub">Every app and guide here is free and stays free. If something saved you time and you want to say thanks, you can chip in. It is optional.</p></div></div>
+      <div class="don" id="donWrap"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>Who's behind this</h2>
+        <p class="sub" style="margin-top:14px">I'm Mehul Soni, a video editor. For 30 days I'm letting Claude do my work and posting the real results, fails included.</p>
+        <p class="sub">Everything here is free. If a tool saves you time, tell me on Instagram, or chip in from the donate section.</p>
+      </div>
+      <div class="links" id="social"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Mehul Soni · Not affiliated with Anthropic.</span>
+    <span>Only download videos you own or have permission to use.</span>
+  </div>
+</footer>
+
+<script>
+/* ===== EDIT HERE: all site content lives in this block ===== */
+const SITE = {
+  apps: [
+    {
+      name: "Sonika Downloader",
+      status: "Releasing soon",            // change to "v1.0.0 · Windows" on release
+      blurb: "Paste a YouTube, Instagram or LinkedIn link, pick the quality, done. No ads, no login, no fake download buttons.",
+      chips: ["YouTube", "Instagram", "LinkedIn", "Windows", "Free · open source"],
+      download: "",                        // GitHub Release URL goes here on launch
+      source: "https://github.com/mehulsoni000123/Sonika",
+      fallback: { label: "Follow for the drop", url: "https://instagram.com/mehuledits.ai" }
+    }
+  ],
+  guides: [
+    { day: "Day 15", title: "Claude asks for free stuff, Part 2", url: "https://drive.google.com/drive/folders/1B9cRTT7FAtGYgHFbODC4mVys8crJvFrC", isNew: true },
+    { day: "Day 14", title: "2 things I never give to AI", url: "https://drive.google.com/drive/folders/1GT0c9p6sOibY1OFZQPWa8SRkObhFtMws" },
+    { day: "Day 13", title: "AI did my work, so I went outside", url: "https://drive.google.com/drive/folders/13kEemzvnAifDokPBsIn9PCSD3w7N_Wfy" },
+    { day: "Day 12", title: "Claude built my map animation tool", url: "https://drive.google.com/drive/folders/1yp_FcdY38VxrgwWF1Z6hxeySsCeP2b2Y" },
+    { day: "Day 11", title: "7 reels in 1 day, Claude Code pipeline", url: "https://drive.google.com/drive/folders/1PbNUZJSyD5npZ0PTf5Dk3T1e99ZQRF6R" },
+    { day: "Day 10", title: "Claude cold-emailed 100 researchers", url: "https://drive.google.com/drive/folders/15Z_fbm9mNhTdJHVlDiY72R7S6Mk9NFiS" },
+    { day: "Day 9",  title: "8 years of editing as Claude skills", url: "https://drive.google.com/drive/folders/1o3lItywekltQXSDrGYLgUPY_1jRuVGxj" },
+    { day: "Day 8",  title: "Stop commenting LINK", url: "https://drive.google.com/drive/folders/1JlLBe7_AJCFxmIjIMsetX6bLcsXEKFPj" },
+    { day: "Day 7",  title: "400 GB freed with one Claude skill", url: "https://drive.google.com/drive/folders/1I8iiQelj5uHifEUemMTNZjFd4WTYEgjt" },
+    { day: "Day 6",  title: "Claude made my YouTube graphics", url: "https://drive.google.com/drive/folders/1HBhCILPxL7LWANkrehxKolGFDQ1UcyPp" },
+    { day: "Day 5",  title: "Free AI credits", url: "https://drive.google.com/drive/folders/1UdK1weOw4myzGNlz4pa0UUcNTi5lqsPA" },
+    { day: "Day 4",  title: "After Effects from my phone", url: "https://drive.google.com/drive/folders/1IT61RlQJGaH-GYT9wq3w1o2Ch9glDR9Z" },
+    { day: "Day 3",  title: "Not a coder, built a finance app", url: "https://drive.google.com/drive/folders/1gvUnVxK-aOXQptxKKW0865ZpOF3gxkEL" },
+    { day: "Day 2",  title: "AI fixed my Premiere subtitles", url: "https://drive.google.com/drive/folders/1jPXj_kZde5a08Jw2cOrtdtA7wKKR_yCV" },
+    { day: "Day 1",  title: "I gave AI my laptop", url: "https://drive.google.com/drive/folders/1MmGct-kV-P9l9wLj3iVgzFRZmURtuzS0" },
+    { day: "Trailer",title: "30 days with Claude", url: "https://drive.google.com/drive/folders/1ZylJMA07Z7FN33ossMUFFIp4HcKHMK9d" }
+  ],
+  donate: {
+    upiId: "",        // e.g. yourname@bank
+    upiQr: "",        // e.g. "upi-qr.png" (file placed next to index.html)
+    razorpay: ""      // Razorpay Payment Page link, https://rzp.io/...
+  },
+  social: [
+    { label: "Instagram", handle: "@mehuledits.ai", url: "https://instagram.com/mehuledits.ai" },
+    { label: "Main Instagram", handle: "@mehul_sonyteller", url: "https://instagram.com/mehul_sonyteller" },
+    { label: "YouTube", handle: "@mehul_sonyteller", url: "https://youtube.com/@mehul_sonyteller" }
+  ]
+};
+/* ===== end of content ===== */
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+document.getElementById("stats").innerHTML =
+  `<div><strong>${SITE.apps.length}</strong>free app</div>
+   <div><strong>${SITE.guides.length}</strong>free guides</div>
+   <div><strong>₹0</strong>always</div>`;
+
+document.getElementById("appList").innerHTML = SITE.apps.map(a => {
+  const main = a.download
+    ? `<a class="btn primary" href="${esc(a.download)}" target="_blank" rel="noopener">Download for Windows</a>`
+    : `<a class="btn primary" href="${esc(a.fallback.url)}" target="_blank" rel="noopener">${esc(a.fallback.label)}</a>`;
+  return `<article class="app"><div class="app-in">
+    <div>
+      <span class="status"><span class="rec" aria-hidden="true"></span>${esc(a.status)}</span>
+      <h3>${esc(a.name)}</h3>
+      <p class="sub" style="margin:0">${esc(a.blurb)}</p>
+      <div class="chips">${a.chips.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>
+      <div class="ctas">${main}<a class="btn" href="${esc(a.source)}" target="_blank" rel="noopener">View on GitHub</a></div>
+      <p class="fine">Windows may warn on first run because the app isn't code-signed: More info → Run anyway.</p>
+    </div>
+    <div class="win" aria-hidden="true">
+      <div class="win-bar"><i></i><i></i><i></i></div>
+      <div class="win-body">
+        <div class="field"><span class="typed">instagram.com/reel/C9x…</span><span class="caret"></span></div>
+        <div class="row2"><div class="field">1080p · MP4</div><div class="go">Download</div></div>
+        <div class="bar"><span></span></div>
+        <div style="color:var(--muted)">Saved to Downloads ✓</div>
+      </div>
+    </div>
+  </div></article>`;
+}).join("");
+
+const log = document.getElementById("log");
+function renderGuides(q = "") {
+  const t = q.trim().toLowerCase();
+  const list = SITE.guides.filter(g => !t || (g.day + " " + g.title).toLowerCase().includes(t));
+  log.innerHTML = list.length ? list.map(g => `<li><a href="${esc(g.url)}" target="_blank" rel="noopener">
+      <span class="day">${esc(g.day)}</span>
+      <span class="gt">${esc(g.title)}${g.isNew ? '<span class="new">new!</span>' : ""}</span>
+      <span class="open">Open guide →</span></a></li>`).join("")
+    : `<li class="empty">Nothing matches "${esc(q)}". Try another word.</li>`;
+}
+renderGuides();
+document.getElementById("q").addEventListener("input", e => renderGuides(e.target.value));
+
+
+const D = SITE.donate;
+function copyText(t, el){
+  const done = ok => { el.textContent = ok ? "Copied" : "Select and copy it manually"; };
+  try { navigator.clipboard.writeText(t).then(()=>done(true),()=>done(false)); } catch(e){ done(false); }
+}
+const upiCard = (D.upiId || D.upiQr)
+  ? `<div class="dcard"><h3>UPI</h3><p>Scan with any UPI app, or copy the ID. No fees.</p>
+      ${D.upiQr ? `<img class="qr" src="${esc(D.upiQr)}" alt="UPI QR code">` : ""}
+      ${D.upiId ? `<div class="upi"><code>${esc(D.upiId)}</code><button class="btn" id="copyUpi" type="button">Copy ID</button></div><div class="toast" id="upiMsg" role="status"></div>` : ""}</div>`
+  : `<div class="dcard"><h3>UPI</h3><p>Scan or copy the ID. No fees.</p><div class="soon">Coming soon</div></div>`;
+const rzpCard = D.razorpay
+  ? `<div class="dcard"><h3>Card, netbanking or UPI</h3><p>Secure checkout by Razorpay. Pick any amount.</p><a class="btn primary" href="${esc(D.razorpay)}" target="_blank" rel="noopener">Donate with Razorpay</a></div>`
+  : `<div class="dcard"><h3>Card, netbanking or UPI</h3><p>Secure checkout by Razorpay. Pick any amount.</p><div class="soon">Coming soon</div></div>`;
+document.getElementById("donWrap").innerHTML = upiCard + rzpCard;
+const cu = document.getElementById("copyUpi");
+if (cu) cu.addEventListener("click", () => copyText(D.upiId, document.getElementById("upiMsg")));
+
+document.getElementById("social").innerHTML = SITE.social.map(s =>
+  `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}<span>${esc(s.handle)}</span></a>`).join("");
+</script>
+</body>
+</html>
