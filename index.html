@@ -124,7 +124,9 @@ h2{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px)
 .dcard{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;display:grid;gap:14px;align-content:start}
 .dcard h3{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0}
 .dcard p{margin:0;color:var(--muted);font-size:15px}
-.qr{width:230px;max-width:100%;height:auto;border-radius:14px;background:#fff}
+.qr{width:220px;max-width:100%;height:auto;border-radius:14px;background:#fff;padding:8px}
+.holder{display:flex;flex-direction:column;gap:2px;font-size:13px;color:var(--muted)}
+.holder strong{font-family:var(--f-display);font-size:18px;color:var(--text);letter-spacing:.04em}
 .upi{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .upi code{font-family:var(--f-mono);font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;word-break:break-all}
 .soon{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:12px;padding:16px}
@@ -261,8 +263,9 @@ const SITE = {
     { day: "Trailer",title: "30 days with Claude", url: "https://drive.google.com/drive/folders/1ZylJMA07Z7FN33ossMUFFIp4HcKHMK9d" }
   ],
   donate: {
-    upiId: "7000123133@slc",
-    upiQr: "upi-qr.jpg",
+    upiId: "",
+    holder: "MEHUL SONI",
+    upiQr: "upi-qr.png",
     razorpay: ""      // Razorpay Payment Page link, https://rzp.io/...
   },
   social: [
@@ -325,8 +328,9 @@ function copyText(t, el){
   try { navigator.clipboard.writeText(t).then(()=>done(true),()=>done(false)); } catch(e){ done(false); }
 }
 const upiCard = (D.upiId || D.upiQr)
-  ? `<div class="dcard"><h3>UPI</h3><p>Scan with any UPI app, or copy the ID. No fees.</p>
+  ? `<div class="dcard"><h3>UPI</h3><p>Scan with any UPI app. No fees.</p>
       ${D.upiQr ? `<img class="qr" src="${esc(D.upiQr)}" alt="UPI QR code">` : ""}
+      ${D.holder ? `<div class="holder"><span>Account holder</span><strong>${esc(D.holder)}</strong></div>` : ""}
       ${D.upiId ? `<div class="upi"><code>${esc(D.upiId)}</code><button class="btn" id="copyUpi" type="button">Copy ID</button></div><div class="toast" id="upiMsg" role="status"></div>` : ""}</div>`
   : `<div class="dcard"><h3>UPI</h3><p>Scan or copy the ID. No fees.</p><div class="soon">Coming soon</div></div>`;
 const rzpCard = D.razorpay
