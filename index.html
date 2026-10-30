@@ -124,7 +124,7 @@ h2{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px)
 .dcard{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;display:grid;gap:14px;align-content:start}
 .dcard h3{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0}
 .dcard p{margin:0;color:var(--muted);font-size:15px}
-.qr{width:180px;max-width:100%;aspect-ratio:1;border-radius:14px;background:#fff;padding:10px;object-fit:contain}
+.qr{width:230px;max-width:100%;height:auto;border-radius:14px;background:#fff}
 .upi{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .upi code{font-family:var(--f-mono);font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;word-break:break-all}
 .soon{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--line);border-radius:12px;padding:16px}
@@ -234,9 +234,9 @@ const SITE = {
   apps: [
     {
       name: "Sonika Downloader",
-      status: "Releasing soon",            // change to "v1.0.0 · Windows" on release
-      blurb: "Paste a YouTube, Instagram or LinkedIn link, pick the quality, done. No ads, no login, no fake download buttons.",
-      chips: ["YouTube", "Instagram", "LinkedIn", "Windows", "Free · open source"],
+      status: "Source live · installer soon",   // change to "v1.0.0 · Windows" on release
+      blurb: "Paste a YouTube, Instagram or Pinterest link, pick the quality, done. Video or audio only, batch and playlist downloads, runs on your own PC.",
+      chips: ["YouTube", "Instagram", "Pinterest", "Windows 10/11", "Free · open source"],
       download: "",                        // GitHub Release URL goes here on launch
       source: "https://github.com/mehulsoni000123/Sonika",
       fallback: { label: "Follow for the drop", url: "https://instagram.com/mehuledits.ai" }
@@ -261,8 +261,8 @@ const SITE = {
     { day: "Trailer",title: "30 days with Claude", url: "https://drive.google.com/drive/folders/1ZylJMA07Z7FN33ossMUFFIp4HcKHMK9d" }
   ],
   donate: {
-    upiId: "",        // e.g. yourname@bank
-    upiQr: "",        // e.g. "upi-qr.png" (file placed next to index.html)
+    upiId: "7000123133@slc",
+    upiQr: "upi-qr.jpg",
     razorpay: ""      // Razorpay Payment Page link, https://rzp.io/...
   },
   social: [
