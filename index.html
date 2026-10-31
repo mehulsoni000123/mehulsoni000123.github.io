@@ -65,6 +65,8 @@ h1 .hot{color:var(--red);text-shadow:0 0 18px var(--glow),0 0 48px rgba(255,42,6
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--line);transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;background:transparent;color:var(--text);font-family:var(--f-body)}
 .btn:hover{transform:translateY(-2px);border-color:var(--red)}
 .btn.primary{background:linear-gradient(180deg,var(--red),var(--red-deep));border-color:transparent;box-shadow:0 0 0 1px rgba(255,42,61,.4),0 8px 30px rgba(255,42,61,.35)}
+.btn.ghost{border-style:dashed;color:var(--muted)}
+.btn.ghost:hover{color:var(--text)}
 .btn.primary:hover{box-shadow:0 0 0 1px var(--red),0 10px 44px rgba(255,42,61,.6)}
 
 section{padding-block:56px}
@@ -241,7 +243,8 @@ const SITE = {
       status: "v1.0.0 · Windows 10/11 · Free",
       blurb: "Paste a YouTube, Instagram or Pinterest link, pick the quality, done. Video or audio only, batch and playlist downloads, runs on your own PC.",
       chips: ["YouTube", "Instagram", "Pinterest", "Windows 10/11", "Free · open source"],
-      download: "https://github.com/mehulsoni000123/Sonika/releases/latest",
+      download: "https://github.com/mehulsoni000123/Sonika/releases/latest/download/Sonika-Downloader-Setup-1.0.0-x64.exe",
+      drive: "",                           // Google Drive share link goes here
       file: "Sonika-Downloader-Setup-1.0.0-x64.exe",
       source: "https://github.com/mehulsoni000123/Sonika",
     }
@@ -288,15 +291,16 @@ document.getElementById("quick").innerHTML = [
 ].map(([h,t,d]) => `<a href="${h}"${h.startsWith("http")?' target="_blank" rel="noopener"':""}><strong>${t}</strong><span>${esc(d)}</span></a>`).join("");
 
 document.getElementById("appList").innerHTML = SITE.apps.map(a => {
-  const main = `<a class="btn primary" href="${esc(a.download)}" target="_blank" rel="noopener">Download for Windows</a>`;
+  const main = `<a class="btn primary" href="${esc(a.download)}">Download for Windows</a>`
+    + (a.drive ? `<a class="btn" href="${esc(a.drive)}" target="_blank" rel="noopener">Download from Google Drive</a>` : "");
   return `<article class="app"><div class="app-in">
     <div>
       <span class="status"><span class="rec" aria-hidden="true"></span>${esc(a.status)}</span>
       <h3>${esc(a.name)}</h3>
       <p class="sub" style="margin:0">${esc(a.blurb)}</p>
       <div class="chips">${a.chips.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>
-      <div class="ctas">${main}<a class="btn" href="${esc(a.source)}" target="_blank" rel="noopener">View on GitHub</a></div>
-      <p class="fine">You can download it from here. The button opens the GitHub release page: under <b>Assets</b>, click <b>${esc(a.file)}</b>, then run it.<br>Windows may warn on first run because the app isn't code-signed: More info → Run anyway.</p>
+      <div class="ctas">${main}<a class="btn ghost" href="${esc(a.source)}" target="_blank" rel="noopener">Source code</a></div>
+      <p class="fine">Download for Windows starts the installer straight away (${esc(a.file)}, about 200 MB). Run it once it finishes.<br>Windows may warn on first run because the app isn't code-signed: More info → Run anyway.</p>
     </div>
     <div class="win" aria-hidden="true">
       <div class="win-bar"><i></i><i></i><i></i></div>
