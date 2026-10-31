@@ -66,8 +66,6 @@ h1 .hot{color:var(--red);text-shadow:0 0 18px var(--glow),0 0 48px rgba(255,42,6
 .btn:hover{transform:translateY(-2px);border-color:var(--red)}
 .btn.primary{background:linear-gradient(180deg,var(--red),var(--red-deep));border-color:transparent;box-shadow:0 0 0 1px rgba(255,42,61,.4),0 8px 30px rgba(255,42,61,.35)}
 .btn.primary:hover{box-shadow:0 0 0 1px var(--red),0 10px 44px rgba(255,42,61,.6)}
-.stats{display:flex;flex-wrap:wrap;gap:28px;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
-.stats strong{display:block;font-family:var(--f-display);font-size:28px;color:var(--text);font-variant-numeric:tabular-nums}
 
 section{padding-block:56px}
 .sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
@@ -117,6 +115,14 @@ h2{font-family:var(--f-display);font-weight:700;font-size:clamp(28px,4.5vw,44px)
 .new{font-family:var(--f-hand);font-size:20px;color:var(--red);margin-left:8px}
 
 
+/* quick links */
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:880px}
+.quick a{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(17,11,12,.7);text-decoration:none;transition:border-color .2s,box-shadow .2s,transform .2s;min-width:0}
+.quick a:hover{border-color:var(--red);box-shadow:0 0 24px rgba(255,42,61,.2);transform:translateY(-2px)}
+.quick strong{font-family:var(--f-display);font-size:17px;font-weight:700}
+.quick span{font-size:13px;color:var(--muted)}
+.quick a:first-child{border-color:rgba(255,42,61,.55)}
+@media (max-width:760px){.quick{grid-template-columns:1fr 1fr}}
 /* donate */
 .navdonate{color:var(--red)!important}
 .don{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -165,8 +171,8 @@ footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);fo
   <div class="wrap nav">
     <a class="mark" href="#top"><span class="rec" aria-hidden="true"></span>SONIKA</a>
     <nav class="navlinks" aria-label="Main">
-      <a href="#apps">Apps</a>
-      <a href="#guides">Free guides</a>
+      <a href="#apps">Download</a>
+      <a href="#guides">Guides</a>
       <a class="hide-s" href="#about">About</a>
       <a class="navdonate" href="#donate">Donate</a>
     </nav>
@@ -178,11 +184,7 @@ footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);fo
     <div class="tag"><span class="rec" aria-hidden="true"></span>Recording · 30 days with Claude</div>
     <h1>Video editor.<br>Not a coder.<br><span class="hot">Free tools.</span></h1>
     <p class="note">I let Claude build my apps and skills. <b>You get them free</b>, no comment needed.</p>
-    <div class="ctas">
-      <a class="btn primary" href="#apps">Get the downloader</a>
-      <a class="btn" href="#guides">Browse free guides</a>
-    </div>
-    <div class="stats" id="stats"></div>
+    <nav class="quick" id="quick" aria-label="Quick links"></nav>
   </div>
 
   <section id="apps">
@@ -236,12 +238,12 @@ const SITE = {
   apps: [
     {
       name: "Sonika Downloader",
-      status: "Source live · installer soon",   // change to "v1.0.0 · Windows" on release
+      status: "v1.0.0 · Windows 10/11 · Free",
       blurb: "Paste a YouTube, Instagram or Pinterest link, pick the quality, done. Video or audio only, batch and playlist downloads, runs on your own PC.",
       chips: ["YouTube", "Instagram", "Pinterest", "Windows 10/11", "Free · open source"],
-      download: "",                        // GitHub Release URL goes here on launch
+      download: "https://github.com/mehulsoni000123/Sonika/releases/latest",
+      file: "Sonika-Downloader-Setup-1.0.0-x64.exe",
       source: "https://github.com/mehulsoni000123/Sonika",
-      fallback: { label: "Follow for the drop", url: "https://instagram.com/mehuledits.ai" }
     }
   ],
   guides: [
@@ -278,15 +280,15 @@ const SITE = {
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-document.getElementById("stats").innerHTML =
-  `<div><strong>${SITE.apps.length}</strong>free app</div>
-   <div><strong>${SITE.guides.length}</strong>free guides</div>
-   <div><strong>₹0</strong>always</div>`;
+document.getElementById("quick").innerHTML = [
+  ["#apps","Download app","Sonika Downloader"],
+  ["#guides","Free guides",SITE.guides.length+" guides, day by day"],
+  ["#donate","Donate","Optional, UPI"],
+  ["https://instagram.com/mehuledits.ai","Instagram","@mehuledits.ai"]
+].map(([h,t,d]) => `<a href="${h}"${h.startsWith("http")?' target="_blank" rel="noopener"':""}><strong>${t}</strong><span>${esc(d)}</span></a>`).join("");
 
 document.getElementById("appList").innerHTML = SITE.apps.map(a => {
-  const main = a.download
-    ? `<a class="btn primary" href="${esc(a.download)}" target="_blank" rel="noopener">Download for Windows</a>`
-    : `<a class="btn primary" href="${esc(a.fallback.url)}" target="_blank" rel="noopener">${esc(a.fallback.label)}</a>`;
+  const main = `<a class="btn primary" href="${esc(a.download)}" target="_blank" rel="noopener">Download for Windows</a>`;
   return `<article class="app"><div class="app-in">
     <div>
       <span class="status"><span class="rec" aria-hidden="true"></span>${esc(a.status)}</span>
@@ -294,7 +296,7 @@ document.getElementById("appList").innerHTML = SITE.apps.map(a => {
       <p class="sub" style="margin:0">${esc(a.blurb)}</p>
       <div class="chips">${a.chips.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>
       <div class="ctas">${main}<a class="btn" href="${esc(a.source)}" target="_blank" rel="noopener">View on GitHub</a></div>
-      <p class="fine">Windows may warn on first run because the app isn't code-signed: More info → Run anyway.</p>
+      <p class="fine">You can download it from here. The button opens the GitHub release page: under <b>Assets</b>, click <b>${esc(a.file)}</b>, then run it.<br>Windows may warn on first run because the app isn't code-signed: More info → Run anyway.</p>
     </div>
     <div class="win" aria-hidden="true">
       <div class="win-bar"><i></i><i></i><i></i></div>
