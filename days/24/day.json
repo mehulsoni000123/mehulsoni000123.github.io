@@ -1,48 +1,49 @@
 {
-  "day": 24,
-  "title": "Become a creative director with AI",
-  "summary": "My method to edit with AI: make your base cut as usual while an audio recorder runs in the background. Say your ideas out loud ('I want a motion graphic here') and drop screenshots into Claude as you go. When the cut is done, transcribe the recording with Gemini, put the transcript into Claude and add the prompt below.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Put your video on the timeline in Premiere Pro (or any editor) and make your base cut.",
-    "Start an audio recorder in the background on your phone or laptop.",
-    "While editing, say your ideas out loud with the timecode, like 'motion graphic here'. Drop reference screenshots into Claude as you go.",
-    "When the cut is done, get a transcript of the recording (I used Gemini).",
-    "Paste the transcript into Claude with the director prompt. Give it access to Chrome only if you're comfortable, and approve each action."
-  ],
-  "prompts": [
-    {
-      "title": "Transcribe my voice notes",
-      "text": "This is an audio recording of me talking while I edit a video: [ATTACH AUDIO].\n\nTranscribe it word for word. Keep any timecodes I say out loud (like \"at 1:20\"). Split it into one line per idea. Don't summarise and don't add anything I didn't say."
-    },
-    {
-      "title": "Creative director prompt",
-      "text": "You are my assistant editor. I'm the creative director.\n\nProject: [WHAT THE VIDEO IS ABOUT], [LENGTH], [PLATFORM AND ASPECT RATIO], edited in [PREMIERE PRO / YOUR EDITOR].\nBelow is the transcript of my voice notes recorded while I made the base cut. I also shared reference screenshots in this chat.\n\nTranscript:\n[PASTE TRANSCRIPT]\n\n1. Turn my notes into a numbered edit list: timecode, what I asked for (motion graphic, b-roll, SFX, text, zoom), which reference screenshot it matches.\n2. For each item, say how you'll get the asset: AI image (e.g. Gemini), a resource found on YouTube, or a video I'm allowed to download.\n3. Show me the list and wait for my OK before you start.\n4. Then work through it one item at a time and save every asset into [ASSETS FOLDER] with clear names that match the edit list numbers.\n\nRules: ask me before using Chrome or any app for the first time, before downloading anything, and before signing in anywhere. Don't buy anything, don't post anything, don't change my base cut. Use only assets I'm allowed to use and note the source of each."
-    },
-    {
-      "title": "Quick check before export",
-      "text": "Compare my edit list with what's now on the timeline (or with the assets folder [ASSETS FOLDER]).\nTell me which items are done, which are missing, and anything that doesn't match my notes. Don't change anything; just give me the checklist."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [
-    {
-      "label": "Gemini",
-      "url": "https://gemini.google.com"
-    },
-    {
-      "label": "Claude",
-      "url": "https://claude.ai"
-    }
-  ],
-  "notes": [
-    "Giving Claude access to Chrome lets it act in your browser. Approve each step and log out of accounts it doesn't need.",
-    "You stay the director: you make the base cut and decide every idea. AI fetches and builds."
-  ]
+ "day": 24,
+ "title": "Become a creative director with AI",
+ "summary": "My method to edit with AI: make your base cut as usual while an audio recorder runs in the background. Say your ideas out loud ('I want a motion graphic here') and drop screenshots into Claude as you go. When the cut is done, transcribe the recording with Gemini, put the transcript into Claude and add the prompt below.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Put your video on the timeline in Premiere Pro (or any editor) and make your base cut.",
+  "Start an audio recorder in the background on your phone or laptop.",
+  "While editing, say your ideas out loud with the timecode, like 'motion graphic here'. Drop reference screenshots into Claude as you go.",
+  "When the cut is done, get a transcript of the recording (I used Gemini).",
+  "Paste the transcript into Claude with the director prompt. Give it access to Chrome only if you're comfortable, and approve each action."
+ ],
+ "prompts": [
+  {
+   "title": "Transcribe my voice notes",
+   "text": "This is an audio recording of me talking while I edit a video: [ATTACH AUDIO].\n\nTranscribe it word for word. Keep any timecodes I say out loud (like \"at 1:20\"). Split it into one line per idea. Don't summarise and don't add anything I didn't say."
+  },
+  {
+   "title": "Creative director prompt",
+   "text": "You are my assistant editor. I'm the creative director.\n\nProject: [WHAT THE VIDEO IS ABOUT], [LENGTH], [PLATFORM AND ASPECT RATIO], edited in [PREMIERE PRO / YOUR EDITOR].\nBelow is the transcript of my voice notes recorded while I made the base cut. I also shared reference screenshots in this chat.\n\nTranscript:\n[PASTE TRANSCRIPT]\n\n1. Turn my notes into a numbered edit list: timecode, what I asked for (motion graphic, b-roll, SFX, text, zoom), which reference screenshot it matches.\n2. For each item, say how you'll get the asset: AI image (e.g. Gemini), a resource found on YouTube, or a video I'm allowed to download.\n3. Show me the list and wait for my OK before you start.\n4. Then work through it one item at a time and save every asset into [ASSETS FOLDER] with clear names that match the edit list numbers.\n\nRules: ask me before using Chrome or any app for the first time, before downloading anything, and before signing in anywhere. Don't buy anything, don't post anything, don't change my base cut. Use only assets I'm allowed to use and note the source of each."
+  },
+  {
+   "title": "Quick check before export",
+   "text": "Compare my edit list with what's now on the timeline (or with the assets folder [ASSETS FOLDER]).\nTell me which items are done, which are missing, and anything that doesn't match my notes. Don't change anything; just give me the checklist."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [
+  {
+   "label": "Gemini",
+   "url": "https://gemini.google.com"
+  },
+  {
+   "label": "Claude",
+   "url": "https://claude.ai"
+  }
+ ],
+ "notes": [
+  "Giving Claude access to Chrome lets it act in your browser. Approve each step and log out of accounts it doesn't need.",
+  "You stay the director: you make the base cut and decide every idea. AI fetches and builds."
+ ],
+ "date": "2026-11-07T11:00:00+05:30"
 }

@@ -1,41 +1,42 @@
 {
-  "day": 25,
-  "title": "Stop wasting Claude tokens: Handy",
-  "summary": "When Claude analyses a video, photo or audio file, it downloads it, goes online or watches it frame by frame, and all that reading and writing eats a lot of tokens. Handy is an open-source, super-fast transcription tool: press the shortcut, talk, and it types. I'm connecting it to Claude so Claude can transcribe through it. Results are coming in a later reel.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Install Handy from its official GitHub page.",
-    "Press the shortcut (in the reel: Ctrl + Shift) and talk. Handy types what you say.",
-    "Use it to dictate long prompts to Claude instead of typing.",
-    "For audio and video, transcribe locally first and give Claude the text, not the file.",
-    "Use the prompt below to have Claude set up a local transcription workflow, with your approval for every install."
-  ],
-  "prompts": [
-    {
-      "title": "Transcribe locally to save tokens",
-      "text": "I want to stop uploading audio and video files to you for analysis because it uses a lot of tokens. Help me transcribe them locally on my PC instead, and then I'll give you only the text.\n\nMy PC: [WINDOWS / MAC], [GPU IF ANY].\nI already have: [HANDY / NOTHING YET].\nFile to test with: [FILE PATH].\n\n1. Check what's already installed that can do offline speech-to-text (for example Handy and its model, or ffmpeg for extracting audio).\n2. Suggest the simplest local setup. Ask me before installing anything.\n3. Transcribe the test file to a text file next to it: [OUTPUT FOLDER].\n4. Tell me how to repeat this myself next time in 2 or 3 steps.\n\nEverything stays on my computer. Don't upload the file anywhere."
-    },
-    {
-      "title": "Work from my transcript, not the video",
-      "text": "Here is the transcript of my video, made locally: [PASTE TRANSCRIPT].\n\nWork only from this text. Don't ask me to upload the video.\n[YOUR TASK, e.g. write captions / find the best 30-second clip / list the key points / write a title and description]."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [
-    {
-      "label": "Handy (official GitHub)",
-      "url": "https://github.com/cjpais/Handy"
-    }
-  ],
-  "notes": [
-    "The Claude + Handy connection was still being built in this reel. Results not shown yet.",
-    "Local transcription keeps your files on your computer.",
-    "Check Handy's settings for your own shortcut."
-  ]
+ "day": 25,
+ "title": "Stop wasting Claude tokens: Handy",
+ "summary": "When Claude analyses a video, photo or audio file, it downloads it, goes online or watches it frame by frame, and all that reading and writing eats a lot of tokens. Handy is an open-source, super-fast transcription tool: press the shortcut, talk, and it types. I'm connecting it to Claude so Claude can transcribe through it. Results are coming in a later reel.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Install Handy from its official GitHub page.",
+  "Press the shortcut (in the reel: Ctrl + Shift) and talk. Handy types what you say.",
+  "Use it to dictate long prompts to Claude instead of typing.",
+  "For audio and video, transcribe locally first and give Claude the text, not the file.",
+  "Use the prompt below to have Claude set up a local transcription workflow, with your approval for every install."
+ ],
+ "prompts": [
+  {
+   "title": "Transcribe locally to save tokens",
+   "text": "I want to stop uploading audio and video files to you for analysis because it uses a lot of tokens. Help me transcribe them locally on my PC instead, and then I'll give you only the text.\n\nMy PC: [WINDOWS / MAC], [GPU IF ANY].\nI already have: [HANDY / NOTHING YET].\nFile to test with: [FILE PATH].\n\n1. Check what's already installed that can do offline speech-to-text (for example Handy and its model, or ffmpeg for extracting audio).\n2. Suggest the simplest local setup. Ask me before installing anything.\n3. Transcribe the test file to a text file next to it: [OUTPUT FOLDER].\n4. Tell me how to repeat this myself next time in 2 or 3 steps.\n\nEverything stays on my computer. Don't upload the file anywhere."
+  },
+  {
+   "title": "Work from my transcript, not the video",
+   "text": "Here is the transcript of my video, made locally: [PASTE TRANSCRIPT].\n\nWork only from this text. Don't ask me to upload the video.\n[YOUR TASK, e.g. write captions / find the best 30-second clip / list the key points / write a title and description]."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [
+  {
+   "label": "Handy (official GitHub)",
+   "url": "https://github.com/cjpais/Handy"
+  }
+ ],
+ "notes": [
+  "The Claude + Handy connection was still being built in this reel. Results not shown yet.",
+  "Local transcription keeps your files on your computer.",
+  "Check Handy's settings for your own shortcut."
+ ],
+ "date": "2026-11-08T11:00:00+05:30"
 }

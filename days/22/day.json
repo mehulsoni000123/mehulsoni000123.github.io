@@ -1,36 +1,37 @@
 {
-  "day": 22,
-  "title": "Sonika Video Downloader: free and open source",
-  "summary": "Free websites for downloading Instagram, YouTube and Pinterest videos are loaded with ads. So I made Sonika Video Downloader: copy the link, paste it, and download in up to 4K. It's free, open source, runs offline on your computer, with no sign-in and no subscription.",
-  "kind": "app",
-  "app": "downloader",
-  "steps": [
-    "Download the app from this page (Windows 10/11).",
-    "Copy the link of a YouTube, Instagram or Pinterest video.",
-    "Paste it into the app and pick the quality (up to 4K when the video has it).",
-    "Download. No sign-in, no subscription.",
-    "Found a bug? Use the feedback form on this website. I check it myself."
-  ],
-  "prompts": [
-    {
-      "title": "Write a clear bug report",
-      "text": "Help me write a clear bug report for a free app, Sonika Video Downloader.\n\nWhat happened: [DESCRIBE THE PROBLEM IN YOUR OWN WORDS].\nWhat I expected: [WHAT SHOULD HAVE HAPPENED].\nMy PC: [WINDOWS 10 or 11], app version [IF SHOWN].\nLink type: [YOUTUBE / INSTAGRAM / PINTEREST]. Don't include the private link itself if it's not public.\nError message: [PASTE IT OR DESCRIBE THE SCREENSHOT].\n\nTurn this into a short report with: title, steps to reproduce, expected result, actual result, PC details. Keep it under 120 words so I can paste it into the feedback form."
-    },
-    {
-      "title": "Organise my downloaded references",
-      "text": "My downloads folder for reference videos is a mess: [FOLDER PATH].\n\nPlan a clean structure, for example by platform (YouTube, Instagram, Pinterest) and by type (hooks, transitions, graphics, b-roll).\n1. Show me the folder plan and a list of which file goes where.\n2. Suggest clear file names: [DATE]_[PLATFORM]_[SHORT DESCRIPTION].\n\nThis is a dry run. Don't move, rename or delete anything until I say OK. Never delete files."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Only download videos you own or have permission to use.",
-    "Works with YouTube, Instagram and Pinterest. Windows 10/11.",
-    "Open source: the GitHub repo is public."
-  ]
+ "day": 22,
+ "title": "Sonika Video Downloader: free and open source",
+ "summary": "Free websites for downloading Instagram, YouTube and Pinterest videos are loaded with ads. So I made Sonika Video Downloader: copy the link, paste it, and download in up to 4K. It's free, open source, runs offline on your computer, with no sign-in and no subscription.",
+ "kind": "app",
+ "app": "downloader",
+ "steps": [
+  "Download the app from this page (Windows 10/11).",
+  "Copy the link of a YouTube, Instagram or Pinterest video.",
+  "Paste it into the app and pick the quality (up to 4K when the video has it).",
+  "Download. No sign-in, no subscription.",
+  "Found a bug? Use the feedback form on this website. I check it myself."
+ ],
+ "prompts": [
+  {
+   "title": "Write a clear bug report",
+   "text": "Help me write a clear bug report for a free app, Sonika Video Downloader.\n\nWhat happened: [DESCRIBE THE PROBLEM IN YOUR OWN WORDS].\nWhat I expected: [WHAT SHOULD HAVE HAPPENED].\nMy PC: [WINDOWS 10 or 11], app version [IF SHOWN].\nLink type: [YOUTUBE / INSTAGRAM / PINTEREST]. Don't include the private link itself if it's not public.\nError message: [PASTE IT OR DESCRIBE THE SCREENSHOT].\n\nTurn this into a short report with: title, steps to reproduce, expected result, actual result, PC details. Keep it under 120 words so I can paste it into the feedback form."
+  },
+  {
+   "title": "Organise my downloaded references",
+   "text": "My downloads folder for reference videos is a mess: [FOLDER PATH].\n\nPlan a clean structure, for example by platform (YouTube, Instagram, Pinterest) and by type (hooks, transitions, graphics, b-roll).\n1. Show me the folder plan and a list of which file goes where.\n2. Suggest clear file names: [DATE]_[PLATFORM]_[SHORT DESCRIPTION].\n\nThis is a dry run. Don't move, rename or delete anything until I say OK. Never delete files."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Only download videos you own or have permission to use.",
+  "Works with YouTube, Instagram and Pinterest. Windows 10/11.",
+  "Open source: the GitHub repo is public."
+ ],
+ "date": "2026-11-13T18:00:00+05:30"
 }

@@ -1,57 +1,58 @@
 {
-  "day": 12,
-  "title": "Claude built my own map animation tool",
-  "summary": "I used to animate maps with GeoLayers: powerful, painful, and about a $200 subscription. Now I cut the A-roll, record voice notes like \"map here, show the school\", and Claude builds accurate maps from map tiles and satellite views with a small app it built for me. Here are the prompts.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Run Prompt 1 once in Claude Code to build your own small map app.",
-    "Cut your A-roll yourself. While cutting, record voice notes: \"map here, show the school\".",
-    "Run Prompt 2 to turn the notes into a shot list and a maps.json file.",
-    "Run Prompt 3 to render every map shot and check it.",
-    "Drop the files on your timeline."
-  ],
-  "prompts": [
-    {
-      "title": "1. Build my own map animation app (one time)",
-      "text": "Build me a small Tauri desktop app for map animations. I can't code, so keep it simple and explain how to run it.\nInput: a JSON file with places (name, lat, lng), an optional route, and a theme (colours, font, pin style).\nMap: free map tiles, street or satellite. Show the correct attribution for the tile provider on screen.\nOutput: an MP4 or PNG sequence at 1080x1920 and 1920x1080, with a smooth eased camera move between places, pins and labels in my theme.\nWork only inside [PROJECT FOLDER]. Ask me before installing anything. When done, show me a test render with 2 places."
-    },
-    {
-      "title": "2. Voice notes to map shot list",
-      "text": "Here are my voice notes from cutting the edit: [ATTACH AUDIO FILES OR PASTE TRANSCRIPT].\n1. Transcribe them. For each note, list: timecode in the edit, place or places, what to show (pin, route, area, satellite view), and duration.\n2. Find the lat/lng for each place. Never invent a location. If a place is unclear or has two matches, ask me.\n3. Save it as maps.json: {shots:[{id, places:[{name,lat,lng}], route, style: \"satellite\" or \"street\", dur}]}.\nShow me the shot list as a table and wait for my OK."
-    },
-    {
-      "title": "3. Render and check the maps",
-      "text": "Render every shot in maps.json with my map app. Size: [1080x1920 / 1920x1080]. Frame rate: [30] fps. Theme: [COLOURS, FONT].\nCheck each one:\n- labels readable at phone size and inside the safe area\n- place names spelled exactly as in my notes or the official source\n- tile attribution visible\nName files map_<shot id>_<place>.mp4 and give me the list in order with timecodes."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: map-animation-from-voice-notes",
-      "path": "skill-map-animation-from-voice-notes/SKILL.md"
-    }
-  ],
-  "links": [
-    {
-      "label": "Tauri (official site)",
-      "url": "https://tauri.app"
-    },
-    {
-      "label": "Google Earth Studio (official)",
-      "url": "https://earth.google.com/studio/"
-    },
-    {
-      "label": "OpenStreetMap tile usage policy",
-      "url": "https://operations.osmfoundation.org/policies/tiles/"
-    }
-  ],
-  "notes": [
-    "Check the tile provider's terms and give attribution (OpenStreetMap, Esri, etc.).",
-    "Google Earth Studio is free for satellite flyovers. Render there and composite.",
-    "I still cut the A-roll myself. That's the story."
-  ]
+ "day": 12,
+ "title": "Claude built my own map animation tool",
+ "summary": "I used to animate maps with GeoLayers: powerful, painful, and about a $200 subscription. Now I cut the A-roll, record voice notes like \"map here, show the school\", and Claude builds accurate maps from map tiles and satellite views with a small app it built for me. Here are the prompts.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Run Prompt 1 once in Claude Code to build your own small map app.",
+  "Cut your A-roll yourself. While cutting, record voice notes: \"map here, show the school\".",
+  "Run Prompt 2 to turn the notes into a shot list and a maps.json file.",
+  "Run Prompt 3 to render every map shot and check it.",
+  "Drop the files on your timeline."
+ ],
+ "prompts": [
+  {
+   "title": "1. Build my own map animation app (one time)",
+   "text": "Build me a small Tauri desktop app for map animations. I can't code, so keep it simple and explain how to run it.\nInput: a JSON file with places (name, lat, lng), an optional route, and a theme (colours, font, pin style).\nMap: free map tiles, street or satellite. Show the correct attribution for the tile provider on screen.\nOutput: an MP4 or PNG sequence at 1080x1920 and 1920x1080, with a smooth eased camera move between places, pins and labels in my theme.\nWork only inside [PROJECT FOLDER]. Ask me before installing anything. When done, show me a test render with 2 places."
+  },
+  {
+   "title": "2. Voice notes to map shot list",
+   "text": "Here are my voice notes from cutting the edit: [ATTACH AUDIO FILES OR PASTE TRANSCRIPT].\n1. Transcribe them. For each note, list: timecode in the edit, place or places, what to show (pin, route, area, satellite view), and duration.\n2. Find the lat/lng for each place. Never invent a location. If a place is unclear or has two matches, ask me.\n3. Save it as maps.json: {shots:[{id, places:[{name,lat,lng}], route, style: \"satellite\" or \"street\", dur}]}.\nShow me the shot list as a table and wait for my OK."
+  },
+  {
+   "title": "3. Render and check the maps",
+   "text": "Render every shot in maps.json with my map app. Size: [1080x1920 / 1920x1080]. Frame rate: [30] fps. Theme: [COLOURS, FONT].\nCheck each one:\n- labels readable at phone size and inside the safe area\n- place names spelled exactly as in my notes or the official source\n- tile attribution visible\nName files map_<shot id>_<place>.mp4 and give me the list in order with timecodes."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: map-animation-from-voice-notes",
+   "path": "skill-map-animation-from-voice-notes/SKILL.md"
+  }
+ ],
+ "links": [
+  {
+   "label": "Tauri (official site)",
+   "url": "https://tauri.app"
+  },
+  {
+   "label": "Google Earth Studio (official)",
+   "url": "https://earth.google.com/studio/"
+  },
+  {
+   "label": "OpenStreetMap tile usage policy",
+   "url": "https://operations.osmfoundation.org/policies/tiles/"
+  }
+ ],
+ "notes": [
+  "Check the tile provider's terms and give attribution (OpenStreetMap, Esri, etc.).",
+  "Google Earth Studio is free for satellite flyovers. Render there and composite.",
+  "I still cut the A-roll myself. That's the story."
+ ],
+ "date": "2026-10-27T11:00:00+05:30"
 }

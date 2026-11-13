@@ -1,42 +1,43 @@
 {
-  "day": 6,
-  "title": "Claude made my YouTube graphics",
-  "summary": "I gave Claude one finished YouTube video as a style reference. It made the charts, maps, title cards and comparison graphics for 10 videos in that exact style. Here are the prompts: build a style sheet once, then design graphics for any script.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Pick one finished video whose graphics you love. Export 6 to 10 still frames of its best graphics.",
-    "Run Prompt 1 with those frames. Save the style sheet it writes.",
-    "For each new video, run Prompt 2 with the script lines that need a graphic.",
-    "Build each graphic with Prompt 3 in the tool you use: After Effects, HTML animation or an image tool."
-  ],
-  "prompts": [
-    {
-      "title": "1. Write my graphics style sheet from frames",
-      "text": "The attached [6 to 10] frames are my graphics style. Write a style sheet I can reuse for every video:\n- Typography: font families, weights, sizes relative to frame height, letter spacing\n- Palette: hex codes for background, primary, accent, positive and negative colours\n- Layout: margins, grid, alignment, where titles and labels sit, safe areas\n- Elements: card corner radius, shadows, icon style, chart style (bar, line, map)\n- Motion: how things enter and exit, easing, durations, stagger\nIf you can't tell a value from the frames, say so and give your best guess marked \"guess\".\nOutput it as style-sheet.md."
-    },
-    {
-      "title": "2. Design graphics for my script",
-      "text": "Use this style sheet: [PASTE style-sheet.md]\nFor each script line below, design one graphic. Pick the best format for it: stat card, comparison, timeline, map or list.\nFor each graphic give me:\n1. The text on screen (short, max [8] words per line)\n2. The layout, using the style sheet values\n3. The animation beats with timings in seconds\n4. How to build it: After Effects JSX, HTML animation, or an image prompt\nBefore you finish, check every graphic against the style sheet and fix any font, colour or spacing that drifts.\n\nScript lines:\n[PASTE THE SCRIPT LINES THAT NEED A GRAPHIC]"
-    },
-    {
-      "title": "3. Build one graphic",
-      "text": "Build graphic [NUMBER] from your list as [AN AFTER EFFECTS JSX SCRIPT / AN HTML ANIMATION / A DETAILED IMAGE PROMPT].\nSize: [1920x1080 or 1080x1920]. Length: [SECONDS] seconds.\nUse only the fonts and hex colours from the style sheet.\nKeep all text inside the safe area. Explain in 3 lines how I run or use it."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: reference-style-graphics",
-      "path": "skill-reference-style-graphics/SKILL.md"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Keep the style sheet in a file and reuse it, so every video in the series looks the same.",
-    "Check numbers and place names on every graphic yourself before it goes out."
-  ]
+ "day": 6,
+ "title": "Claude made my YouTube graphics",
+ "summary": "I gave Claude one finished YouTube video as a style reference. It made the charts, maps, title cards and comparison graphics for 10 videos in that exact style. Here are the prompts: build a style sheet once, then design graphics for any script.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Pick one finished video whose graphics you love. Export 6 to 10 still frames of its best graphics.",
+  "Run Prompt 1 with those frames. Save the style sheet it writes.",
+  "For each new video, run Prompt 2 with the script lines that need a graphic.",
+  "Build each graphic with Prompt 3 in the tool you use: After Effects, HTML animation or an image tool."
+ ],
+ "prompts": [
+  {
+   "title": "1. Write my graphics style sheet from frames",
+   "text": "The attached [6 to 10] frames are my graphics style. Write a style sheet I can reuse for every video:\n- Typography: font families, weights, sizes relative to frame height, letter spacing\n- Palette: hex codes for background, primary, accent, positive and negative colours\n- Layout: margins, grid, alignment, where titles and labels sit, safe areas\n- Elements: card corner radius, shadows, icon style, chart style (bar, line, map)\n- Motion: how things enter and exit, easing, durations, stagger\nIf you can't tell a value from the frames, say so and give your best guess marked \"guess\".\nOutput it as style-sheet.md."
+  },
+  {
+   "title": "2. Design graphics for my script",
+   "text": "Use this style sheet: [PASTE style-sheet.md]\nFor each script line below, design one graphic. Pick the best format for it: stat card, comparison, timeline, map or list.\nFor each graphic give me:\n1. The text on screen (short, max [8] words per line)\n2. The layout, using the style sheet values\n3. The animation beats with timings in seconds\n4. How to build it: After Effects JSX, HTML animation, or an image prompt\nBefore you finish, check every graphic against the style sheet and fix any font, colour or spacing that drifts.\n\nScript lines:\n[PASTE THE SCRIPT LINES THAT NEED A GRAPHIC]"
+  },
+  {
+   "title": "3. Build one graphic",
+   "text": "Build graphic [NUMBER] from your list as [AN AFTER EFFECTS JSX SCRIPT / AN HTML ANIMATION / A DETAILED IMAGE PROMPT].\nSize: [1920x1080 or 1080x1920]. Length: [SECONDS] seconds.\nUse only the fonts and hex colours from the style sheet.\nKeep all text inside the safe area. Explain in 3 lines how I run or use it."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: reference-style-graphics",
+   "path": "skill-reference-style-graphics/SKILL.md"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Keep the style sheet in a file and reuse it, so every video in the series looks the same.",
+  "Check numbers and place names on every graphic yourself before it goes out."
+ ],
+ "date": "2026-10-20T21:30:00+05:30"
 }

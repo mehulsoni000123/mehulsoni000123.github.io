@@ -1,49 +1,50 @@
 {
-  "day": 10,
-  "title": "Claude cold-emailed 100 researchers for my video",
-  "summary": "For my YouTube video on Vietnam I wanted real experts, not AI answers. Claude read my script, pulled out the open questions, found 100 researchers and wrote each one a short personal email. At least 10 replied and 5 said \"let's talk\". Here are the prompts, with an approval step before anything is sent.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Install the expert-outreach skill.",
-    "Run Prompt 1 with your script. It finds people and saves a list. Nothing is sent.",
-    "Run Prompt 2. Check the 3 sample emails and fix the tone.",
-    "Approve sending in batches of 10 from your own address (Prompt 3), or send the drafts yourself.",
-    "Track replies with Prompt 4."
-  ],
-  "prompts": [
-    {
-      "title": "1. Find the right experts (nothing is sent)",
-      "text": "Read my script: [ATTACH SCRIPT OR OUTLINE]. Topic: [TOPIC].\n1. List the 5 to 10 questions only a real expert can answer for this video.\n2. Search the web for [30] people who can answer them: university researchers, authors of published papers, institute staff, journalists who cover the topic. Countries or languages: [ANY / LIST].\n3. For each person record: name, role, institution, one line on why they fit (cite their specific work), and a PUBLIC work email from an official page (university or institute site, paper contact).\n4. No email found on an official page? Skip the person. Never guess or build an address.\nSave it as outreach.csv and show me the table. Do not send or draft anything yet."
-    },
-    {
-      "title": "2. Draft the emails (show me 3 first)",
-      "text": "Draft one email per person in outreach.csv. Do not send anything.\n- Subject: specific, under 8 words (e.g. \"Quick question on your [TOPIC] research\").\n- Body under 120 words:\n  1. Who I am in one line: [YOUR NAME, what you make, your channel]\n  2. Why them, citing their actual work\n  3. The ask: a 20-minute call or 3 written answers\n  4. What they get: credit in the video and a link\n  5. An easy out: \"No worries if not.\"\nShow me 3 drafts first. Wait for my changes before you write the rest."
-    },
-    {
-      "title": "3. Send one approved batch",
-      "text": "I approve sending batch [1]: the next 10 people in outreach.csv.\nBefore sending, show me the 10 names and subjects one last time and wait for me to type \"send\".\nSend from my own connected email account only. One email per person.\nWrite the sent date and time into outreach.csv. Then stop. Do not send the next batch without my approval."
-    },
-    {
-      "title": "4. Track replies and draft answers",
-      "text": "Check my inbox for replies to the outreach emails in outreach.csv.\nUpdate each row: replied, call booked, declined, or no reply.\nFor each reply, draft an answer for me to approve. Do not send it.\nFor people with no reply after 7 days, draft ONE polite follow-up. Never more than one.\nShow me a short summary table at the end."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: expert-outreach",
-      "path": "skill-expert-outreach/SKILL.md"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Real, public work emails only. No guessing addresses, no scraping personal data.",
-    "One email per person. One polite follow-up after a week, max.",
-    "Say clearly who you are, what the video is, and what you're asking for.",
-    "You approve every batch before it is sent."
-  ]
+ "day": 10,
+ "title": "Claude cold-emailed 100 researchers for my video",
+ "summary": "For my YouTube video on Vietnam I wanted real experts, not AI answers. Claude read my script, pulled out the open questions, found 100 researchers and wrote each one a short personal email. At least 10 replied and 5 said \"let's talk\". Here are the prompts, with an approval step before anything is sent.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Install the expert-outreach skill.",
+  "Run Prompt 1 with your script. It finds people and saves a list. Nothing is sent.",
+  "Run Prompt 2. Check the 3 sample emails and fix the tone.",
+  "Approve sending in batches of 10 from your own address (Prompt 3), or send the drafts yourself.",
+  "Track replies with Prompt 4."
+ ],
+ "prompts": [
+  {
+   "title": "1. Find the right experts (nothing is sent)",
+   "text": "Read my script: [ATTACH SCRIPT OR OUTLINE]. Topic: [TOPIC].\n1. List the 5 to 10 questions only a real expert can answer for this video.\n2. Search the web for [30] people who can answer them: university researchers, authors of published papers, institute staff, journalists who cover the topic. Countries or languages: [ANY / LIST].\n3. For each person record: name, role, institution, one line on why they fit (cite their specific work), and a PUBLIC work email from an official page (university or institute site, paper contact).\n4. No email found on an official page? Skip the person. Never guess or build an address.\nSave it as outreach.csv and show me the table. Do not send or draft anything yet."
+  },
+  {
+   "title": "2. Draft the emails (show me 3 first)",
+   "text": "Draft one email per person in outreach.csv. Do not send anything.\n- Subject: specific, under 8 words (e.g. \"Quick question on your [TOPIC] research\").\n- Body under 120 words:\n  1. Who I am in one line: [YOUR NAME, what you make, your channel]\n  2. Why them, citing their actual work\n  3. The ask: a 20-minute call or 3 written answers\n  4. What they get: credit in the video and a link\n  5. An easy out: \"No worries if not.\"\nShow me 3 drafts first. Wait for my changes before you write the rest."
+  },
+  {
+   "title": "3. Send one approved batch",
+   "text": "I approve sending batch [1]: the next 10 people in outreach.csv.\nBefore sending, show me the 10 names and subjects one last time and wait for me to type \"send\".\nSend from my own connected email account only. One email per person.\nWrite the sent date and time into outreach.csv. Then stop. Do not send the next batch without my approval."
+  },
+  {
+   "title": "4. Track replies and draft answers",
+   "text": "Check my inbox for replies to the outreach emails in outreach.csv.\nUpdate each row: replied, call booked, declined, or no reply.\nFor each reply, draft an answer for me to approve. Do not send it.\nFor people with no reply after 7 days, draft ONE polite follow-up. Never more than one.\nShow me a short summary table at the end."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: expert-outreach",
+   "path": "skill-expert-outreach/SKILL.md"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Real, public work emails only. No guessing addresses, no scraping personal data.",
+  "One email per person. One polite follow-up after a week, max.",
+  "Say clearly who you are, what the video is, and what you're asking for.",
+  "You approve every batch before it is sent."
+ ],
+ "date": "2026-10-25T11:00:00+05:30"
 }

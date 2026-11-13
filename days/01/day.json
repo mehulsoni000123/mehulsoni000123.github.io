@@ -1,54 +1,55 @@
 {
-  "day": 1,
-  "title": "I gave AI my laptop (storage cleanup)",
-  "summary": "My D: drive had 27 GB left out of 397 GB. Claude scanned 9,295 files, found about 155 GB of duplicates and old renders, and asked me before touching anything. Here are the prompts to do the same safely.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Back up anything important first.",
-    "Install the safe-drive-cleanup skill (optional, the prompts work without it).",
-    "Run Prompt 1. It only builds a report and changes nothing.",
-    "Read the report. Tell Claude which items to move.",
-    "Run Prompt 2. Files go to a _Review folder with a log, never deleted.",
-    "After a week, if nothing is missing, empty _Review yourself."
-  ],
-  "prompts": [
-    {
-      "title": "1. Report only (changes nothing)",
-      "text": "You are auditing my storage drives. Do NOT move, rename or delete anything in this step.\nDrives to scan: [D:, E:]\nNever open or touch these folders: [CLIENT PROJECTS FOLDER], [PERSONAL PHOTOS FOLDER], Windows and Program Files.\n\nBuild a report with:\n1. The 20 biggest folders, with sizes.\n2. Duplicate files: same name and same size first, then confirm with a file hash. Show which copy you would keep and why.\n3. Old render, preview and cache files (for example Media Cache, Peak Files, Premiere Auto-Save, *.cfa, *.pek).\n4. Files over 500 MB that have not been opened or changed in 6 months.\n\nShow it as a table per category: path, size, last modified, reason. End with the total space I could get back.\nThen stop and wait for me to choose what to act on."
-    },
-    {
-      "title": "2. Move approved items to _Review (undoable)",
-      "text": "From your report, act ONLY on these items: [LIST THE CATEGORIES OR ROWS I APPROVED]\nRules:\n- Never delete anything permanently.\n- Move each item into [D:\\_Review] on the same drive, keeping its original folder structure.\n- Before moving, write a CSV log at [D:\\_Review\\move_log.csv] with: original_path, new_path, size_bytes, reason.\n- Ask me before any single move bigger than 10 GB.\n- Skip anything you are not sure about and list it for me.\nWhen done, tell me the space freed and where the log is."
-    },
-    {
-      "title": "3. Undo: put files back from the log",
-      "text": "Read [D:\\_Review\\move_log.csv].\nMove every file listed back from new_path to original_path. Only do the rows I list here: [ALL / ROW NUMBERS / FILE NAMES].\nIf a file already exists at the original path, do not overwrite it. List it for me instead.\nShow me the plan first, wait for my \"yes\", then do it and report what was restored."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: safe-drive-cleanup",
-      "path": "skill-safe-drive-cleanup/SKILL.md"
-    }
-  ],
-  "links": [
-    {
-      "label": "Claude desktop and mobile apps (official)",
-      "url": "https://claude.ai/download"
-    },
-    {
-      "label": "Claude Code (official GitHub)",
-      "url": "https://github.com/anthropics/claude-code"
-    }
-  ],
-  "notes": [
-    "Report first, act second. Nothing changes until you have seen the plan.",
-    "Move, don't delete, and keep a log. That makes every action undoable.",
-    "Exclude client work and personal photos by name in the prompt."
-  ]
+ "day": 1,
+ "title": "I gave AI my laptop (storage cleanup)",
+ "summary": "My D: drive had 27 GB left out of 397 GB. Claude scanned 9,295 files, found about 155 GB of duplicates and old renders, and asked me before touching anything. Here are the prompts to do the same safely.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Back up anything important first.",
+  "Install the safe-drive-cleanup skill (optional, the prompts work without it).",
+  "Run Prompt 1. It only builds a report and changes nothing.",
+  "Read the report. Tell Claude which items to move.",
+  "Run Prompt 2. Files go to a _Review folder with a log, never deleted.",
+  "After a week, if nothing is missing, empty _Review yourself."
+ ],
+ "prompts": [
+  {
+   "title": "1. Report only (changes nothing)",
+   "text": "You are auditing my storage drives. Do NOT move, rename or delete anything in this step.\nDrives to scan: [D:, E:]\nNever open or touch these folders: [CLIENT PROJECTS FOLDER], [PERSONAL PHOTOS FOLDER], Windows and Program Files.\n\nBuild a report with:\n1. The 20 biggest folders, with sizes.\n2. Duplicate files: same name and same size first, then confirm with a file hash. Show which copy you would keep and why.\n3. Old render, preview and cache files (for example Media Cache, Peak Files, Premiere Auto-Save, *.cfa, *.pek).\n4. Files over 500 MB that have not been opened or changed in 6 months.\n\nShow it as a table per category: path, size, last modified, reason. End with the total space I could get back.\nThen stop and wait for me to choose what to act on."
+  },
+  {
+   "title": "2. Move approved items to _Review (undoable)",
+   "text": "From your report, act ONLY on these items: [LIST THE CATEGORIES OR ROWS I APPROVED]\nRules:\n- Never delete anything permanently.\n- Move each item into [D:\\_Review] on the same drive, keeping its original folder structure.\n- Before moving, write a CSV log at [D:\\_Review\\move_log.csv] with: original_path, new_path, size_bytes, reason.\n- Ask me before any single move bigger than 10 GB.\n- Skip anything you are not sure about and list it for me.\nWhen done, tell me the space freed and where the log is."
+  },
+  {
+   "title": "3. Undo: put files back from the log",
+   "text": "Read [D:\\_Review\\move_log.csv].\nMove every file listed back from new_path to original_path. Only do the rows I list here: [ALL / ROW NUMBERS / FILE NAMES].\nIf a file already exists at the original path, do not overwrite it. List it for me instead.\nShow me the plan first, wait for my \"yes\", then do it and report what was restored."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: safe-drive-cleanup",
+   "path": "skill-safe-drive-cleanup/SKILL.md"
+  }
+ ],
+ "links": [
+  {
+   "label": "Claude desktop and mobile apps (official)",
+   "url": "https://claude.ai/download"
+  },
+  {
+   "label": "Claude Code (official GitHub)",
+   "url": "https://github.com/anthropics/claude-code"
+  }
+ ],
+ "notes": [
+  "Report first, act second. Nothing changes until you have seen the plan.",
+  "Move, don't delete, and keep a log. That makes every action undoable.",
+  "Exclude client work and personal photos by name in the prompt."
+ ],
+ "date": "2026-10-15T19:30:00+05:30"
 }

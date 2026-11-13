@@ -1,37 +1,38 @@
 {
-  "day": 5,
-  "title": "Free AI credits I almost missed",
-  "summary": "Inside my setup I found a free credit slot I had never noticed: no subscription, no usage cost, about $124 (more than ₹10,000) already connected and running. This page is a 5-minute checklist to find unused credits in your own tools, without risking a surprise bill.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Open the Usage or Billing page of every AI tool you pay for.",
-    "Look for the words credits, free tier, promo or included usage.",
-    "Check if your existing plans include usage you are not using yet (extra models, API credits, cloud credits).",
-    "Before you connect any key anywhere, set a monthly spend cap or alert.",
-    "Note the expiry date of every credit you find."
-  ],
-  "prompts": [
-    {
-      "title": "1. Find unused credits in my tools (checklist)",
-      "text": "Help me find free or unused AI credits in tools I already have. Do not ask me for any passwords or API keys.\n\nMy tools and plans: [LIST THEM, e.g. \"Claude Pro, a cloud account, a video AI tool\"]\n\nFor each tool:\n1. Tell me where its Usage or Billing page usually is, and what words to look for there (credits, free tier, promo, included usage).\n2. Tell me if plans like mine sometimes include extra usage (API credits, cloud credits, extra models) and how I can check that on the official page.\n3. Tell me how to set a monthly spend cap or alert in that tool.\nThen give me a simple checklist table: tool, where to look, what I found (blank for me to fill), expiry date, spend cap set yes/no.\nIf you are not sure a specific offer exists today, say so. Offers change often."
-    },
-    {
-      "title": "2. Check a credit offer before I connect it",
-      "text": "I found this credit offer: [PASTE THE OFFER TEXT OR DESCRIBE IT, NOT YOUR KEY].\nBefore I connect it to any tool, tell me:\n1. Is this from the official company page? What should I check to be sure?\n2. What happens when the credits run out: does it stop, or start charging my card?\n3. When do the credits expire?\n4. How do I set a spend limit so it never becomes a bill?\n5. Should I make a separate key just for this tool, and how do I switch it off later?\nNever ask me to paste the key itself into this chat."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Free credit offers change often. Treat this as a checklist, not a promise that a specific offer still exists.",
-    "Never paste API keys into random websites, chats or screenshots.",
-    "Use a separate key per tool, so you can switch one off without breaking the rest.",
-    "Credits expire. Check the date."
-  ]
+ "day": 5,
+ "title": "Free AI credits I almost missed",
+ "summary": "Inside my setup I found a free credit slot I had never noticed: no subscription, no usage cost, about $124 (more than ₹10,000) already connected and running. This page is a 5-minute checklist to find unused credits in your own tools, without risking a surprise bill.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Open the Usage or Billing page of every AI tool you pay for.",
+  "Look for the words credits, free tier, promo or included usage.",
+  "Check if your existing plans include usage you are not using yet (extra models, API credits, cloud credits).",
+  "Before you connect any key anywhere, set a monthly spend cap or alert.",
+  "Note the expiry date of every credit you find."
+ ],
+ "prompts": [
+  {
+   "title": "1. Find unused credits in my tools (checklist)",
+   "text": "Help me find free or unused AI credits in tools I already have. Do not ask me for any passwords or API keys.\n\nMy tools and plans: [LIST THEM, e.g. \"Claude Pro, a cloud account, a video AI tool\"]\n\nFor each tool:\n1. Tell me where its Usage or Billing page usually is, and what words to look for there (credits, free tier, promo, included usage).\n2. Tell me if plans like mine sometimes include extra usage (API credits, cloud credits, extra models) and how I can check that on the official page.\n3. Tell me how to set a monthly spend cap or alert in that tool.\nThen give me a simple checklist table: tool, where to look, what I found (blank for me to fill), expiry date, spend cap set yes/no.\nIf you are not sure a specific offer exists today, say so. Offers change often."
+  },
+  {
+   "title": "2. Check a credit offer before I connect it",
+   "text": "I found this credit offer: [PASTE THE OFFER TEXT OR DESCRIBE IT, NOT YOUR KEY].\nBefore I connect it to any tool, tell me:\n1. Is this from the official company page? What should I check to be sure?\n2. What happens when the credits run out: does it stop, or start charging my card?\n3. When do the credits expire?\n4. How do I set a spend limit so it never becomes a bill?\n5. Should I make a separate key just for this tool, and how do I switch it off later?\nNever ask me to paste the key itself into this chat."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Free credit offers change often. Treat this as a checklist, not a promise that a specific offer still exists.",
+  "Never paste API keys into random websites, chats or screenshots.",
+  "Use a separate key per tool, so you can switch one off without breaking the rest.",
+  "Credits expire. Check the date."
+ ],
+ "date": "2026-10-19T18:00:00+05:30"
 }

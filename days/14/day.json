@@ -1,38 +1,39 @@
 {
-  "day": 14,
-  "title": "2 things I never give to AI",
-  "summary": "On a listing video for a ₹40-crore home with 143 shots, Claude sorted everything into A-roll, B-roll, drone and close-up bins in one go. But I always cut the base A-roll and pick the music myself. That's the feel a client pays for. Here are the prompts for the parts Claude does.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Install the footage-sorter skill.",
-    "Run Prompt 1 on your shoot folder. It sorts clips without touching the source files.",
-    "Cut the base A-roll yourself. That's where the story is.",
-    "Run Prompt 2 for a music shortlist. Then listen and pick with your own ears."
-  ],
-  "prompts": [
-    {
-      "title": "1. Sort my shoot into bins",
-      "text": "Look at every video clip in [SHOOT FOLDER].\n1. List each clip: name, duration, resolution, fps, camera model (from metadata) and created time.\n2. Sample 3 frames per clip (at 10%, 50% and 90%) and classify it:\n   - A-roll: a person talking to camera, stable framing, longer, with speech\n   - Drone: high aerial view, DJI metadata, or a sky or rooftop view\n   - Close-up: a detail or macro shot filling the frame\n   - B-roll: everything else that shows the place\n   - Other: if you're not sure, and say why\n3. In Premiere, create bins with those names in [PROJECT NAME] and import each clip into its bin. If Premiere isn't connected, write a CSV: clip, bin.\n4. Never move, rename or delete the source files.\nGive me a table: count and total duration per bin, plus the clips you were unsure about."
-    },
-    {
-      "title": "2. Music shortlist (I pick the final track)",
-      "text": "Look through my music library in [MUSIC FOLDER].\nThe video: [TYPE, e.g. luxury home listing], length [SECONDS] s, mood [e.g. calm, premium, warm].\nGive me a shortlist of [8] tracks that fit: file name, length, estimated BPM, mood, and why it fits.\nDon't place music in my edit and don't download or buy anything. I will listen and choose myself."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: footage-sorter",
-      "path": "skill-footage-sorter/SKILL.md"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Cut the base A-roll yourself. If you give that away too, why would a client pay you?",
-    "Choose music with your own ears. Claude only shortlists."
-  ]
+ "day": 14,
+ "title": "2 things I never give to AI",
+ "summary": "On a listing video for a ₹40-crore home with 143 shots, Claude sorted everything into A-roll, B-roll, drone and close-up bins in one go. But I always cut the base A-roll and pick the music myself. That's the feel a client pays for. Here are the prompts for the parts Claude does.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Install the footage-sorter skill.",
+  "Run Prompt 1 on your shoot folder. It sorts clips without touching the source files.",
+  "Cut the base A-roll yourself. That's where the story is.",
+  "Run Prompt 2 for a music shortlist. Then listen and pick with your own ears."
+ ],
+ "prompts": [
+  {
+   "title": "1. Sort my shoot into bins",
+   "text": "Look at every video clip in [SHOOT FOLDER].\n1. List each clip: name, duration, resolution, fps, camera model (from metadata) and created time.\n2. Sample 3 frames per clip (at 10%, 50% and 90%) and classify it:\n   - A-roll: a person talking to camera, stable framing, longer, with speech\n   - Drone: high aerial view, DJI metadata, or a sky or rooftop view\n   - Close-up: a detail or macro shot filling the frame\n   - B-roll: everything else that shows the place\n   - Other: if you're not sure, and say why\n3. In Premiere, create bins with those names in [PROJECT NAME] and import each clip into its bin. If Premiere isn't connected, write a CSV: clip, bin.\n4. Never move, rename or delete the source files.\nGive me a table: count and total duration per bin, plus the clips you were unsure about."
+  },
+  {
+   "title": "2. Music shortlist (I pick the final track)",
+   "text": "Look through my music library in [MUSIC FOLDER].\nThe video: [TYPE, e.g. luxury home listing], length [SECONDS] s, mood [e.g. calm, premium, warm].\nGive me a shortlist of [8] tracks that fit: file name, length, estimated BPM, mood, and why it fits.\nDon't place music in my edit and don't download or buy anything. I will listen and choose myself."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: footage-sorter",
+   "path": "skill-footage-sorter/SKILL.md"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Cut the base A-roll yourself. If you give that away too, why would a client pay you?",
+  "Choose music with your own ears. Claude only shortlists."
+ ],
+ "date": "2026-10-29T11:00:00+05:30"
 }

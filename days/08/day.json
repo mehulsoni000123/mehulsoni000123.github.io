@@ -1,49 +1,50 @@
 {
-  "day": 8,
-  "title": "Stop commenting LINK",
-  "summary": "Every reel says \"comment LINK and I'll DM you\". You don't need to wait. Download the reel, give the video to Claude, and say \"install this\". It works out the tool from the video, and most of the time you only click Allow. Here is the prompt and the skill.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Copy the reel's link.",
-    "Download the video with a free Instagram video downloader.",
-    "Give the whole video to Claude (Claude Code or the Claude desktop app). It can read the frames and on-screen text.",
-    "Paste Prompt 1, or Prompt 2 if you only want to check the tool first.",
-    "Read every Allow request before you click it."
-  ],
-  "prompts": [
-    {
-      "title": "1. Identify and install the tool from this reel",
-      "text": "This video [FILE NAME] is a reel that shows a tool or workflow. Watch it and install it for me safely.\n1. Look at frames every 1 to 2 seconds and read all on-screen text: tool names, websites, GitHub repos, commands. Transcribe the audio if there is any.\n2. Tell me exactly what the tool is and find its OFFICIAL source: the maker's website or the original GitHub repo. Never use links from comments or DMs.\n3. Tell me: is it free or paid, who makes it, is it actively maintained, and what permissions it needs. Warn me if it asks for passwords, API keys or payment.\n4. List the install steps for my system: [WINDOWS 11 / MAC], including anything it depends on (Python, Node, FFmpeg).\n5. Install it. Ask me before anything that needs admin rights, changes system settings, or costs money.\n6. Run a small test and show me it works.\n7. Tell me where it is installed, how to open it, and how to uninstall it."
-    },
-    {
-      "title": "2. Just check it first (no install)",
-      "text": "Watch this reel [FILE NAME] and tell me what tool or workflow it shows. Do not install anything.\nGive me: the tool name, its official website or GitHub page, free or paid, who makes it, what it needs access to, and any red flags (asks for passwords, keys or payment, unknown maker, no official source).\nFinish with your honest opinion: safe to try, try with care, or skip."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    },
-    {
-      "label": "Claude skill: install-from-reel",
-      "path": "skill-install-from-reel/SKILL.md"
-    }
-  ],
-  "links": [
-    {
-      "label": "Claude desktop and mobile apps (official)",
-      "url": "https://claude.ai/download"
-    },
-    {
-      "label": "Claude Code (official GitHub)",
-      "url": "https://github.com/anthropics/claude-code"
-    }
-  ],
-  "notes": [
-    "Only install from the official website or the official GitHub repo. Never from a random DM link.",
-    "Read what Claude asks to Allow before you click.",
-    "If a tool needs your passwords or API keys, stop and check it first."
-  ]
+ "day": 8,
+ "title": "Stop commenting LINK",
+ "summary": "Every reel says \"comment LINK and I'll DM you\". You don't need to wait. Download the reel, give the video to Claude, and say \"install this\". It works out the tool from the video, and most of the time you only click Allow. Here is the prompt and the skill.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Copy the reel's link.",
+  "Download the video with a free Instagram video downloader.",
+  "Give the whole video to Claude (Claude Code or the Claude desktop app). It can read the frames and on-screen text.",
+  "Paste Prompt 1, or Prompt 2 if you only want to check the tool first.",
+  "Read every Allow request before you click it."
+ ],
+ "prompts": [
+  {
+   "title": "1. Identify and install the tool from this reel",
+   "text": "This video [FILE NAME] is a reel that shows a tool or workflow. Watch it and install it for me safely.\n1. Look at frames every 1 to 2 seconds and read all on-screen text: tool names, websites, GitHub repos, commands. Transcribe the audio if there is any.\n2. Tell me exactly what the tool is and find its OFFICIAL source: the maker's website or the original GitHub repo. Never use links from comments or DMs.\n3. Tell me: is it free or paid, who makes it, is it actively maintained, and what permissions it needs. Warn me if it asks for passwords, API keys or payment.\n4. List the install steps for my system: [WINDOWS 11 / MAC], including anything it depends on (Python, Node, FFmpeg).\n5. Install it. Ask me before anything that needs admin rights, changes system settings, or costs money.\n6. Run a small test and show me it works.\n7. Tell me where it is installed, how to open it, and how to uninstall it."
+  },
+  {
+   "title": "2. Just check it first (no install)",
+   "text": "Watch this reel [FILE NAME] and tell me what tool or workflow it shows. Do not install anything.\nGive me: the tool name, its official website or GitHub page, free or paid, who makes it, what it needs access to, and any red flags (asks for passwords, keys or payment, unknown maker, no official source).\nFinish with your honest opinion: safe to try, try with care, or skip."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: install-from-reel",
+   "path": "skill-install-from-reel/SKILL.md"
+  }
+ ],
+ "links": [
+  {
+   "label": "Claude desktop and mobile apps (official)",
+   "url": "https://claude.ai/download"
+  },
+  {
+   "label": "Claude Code (official GitHub)",
+   "url": "https://github.com/anthropics/claude-code"
+  }
+ ],
+ "notes": [
+  "Only install from the official website or the official GitHub repo. Never from a random DM link.",
+  "Read what Claude asks to Allow before you click.",
+  "If a tool needs your passwords or API keys, stop and check it first."
+ ],
+ "date": "2026-10-23T11:00:00+05:30"
 }

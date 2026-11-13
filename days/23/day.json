@@ -1,36 +1,37 @@
 {
-  "day": 23,
-  "title": "Sonika FrameFinder: find editing references fast",
-  "summary": "AI can do the edit, but without good references it makes generic stuff. Sonika FrameFinder gives you new references every day from Pinterest and other sites. Liked something while scrolling? Screenshot it, paste it and get similar references, then download and replicate it with AI or by yourself. Free and open source.",
-  "kind": "app",
-  "app": "framefinder",
-  "steps": [
-    "Download Sonika FrameFinder from this page and open it.",
-    "Browse the new references it shows each day (Pinterest, Behance, Dribbble and 20+ sites).",
-    "Liked a frame on Instagram? Screenshot it and paste it into FrameFinder to find similar references.",
-    "Optional: add a YouTube Data API key and an OpenAI-compatible key in Settings. They are stored encrypted on your PC.",
-    "Download the reference video and recreate the style with AI or by hand.",
-    "Problems or ideas? Use the feedback form on this website."
-  ],
-  "prompts": [
-    {
-      "title": "Recreate a reference style with my footage",
-      "text": "I found this reference: [ATTACH SCREENSHOT(S) OR VIDEO PATH].\nMy project: [WHAT THE VIDEO IS ABOUT], [PLATFORM AND ASPECT RATIO], editor: [PREMIERE PRO / AFTER EFFECTS / CAPCUT / OTHER].\n\n1. Describe the style: colors, fonts, layout, motion, pacing, transitions.\n2. Give me a step-by-step plan to rebuild it in my editor with my own footage and text.\n3. List anything I need (fonts, assets) and free or licensed sources for each.\n\nAdapt the style, don't copy the creator's content, logos or exact text."
-    },
-    {
-      "title": "Turn my references into a style board",
-      "text": "Here are [NUMBER] references I saved for one project: [ATTACH SCREENSHOTS].\n\nMake me a one-page style board:\n- 3 to 5 common elements across them (color palette, type, motion, framing).\n- What to avoid so my video doesn't look generic.\n- A short brief I can give to an AI tool or another editor to make the edit match this style."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "API keys go only into FrameFinder's Settings, never into a chat.",
-    "Use references for inspiration. Don't reupload other creators' work."
-  ]
+ "day": 23,
+ "title": "Sonika FrameFinder: find editing references fast",
+ "summary": "AI can do the edit, but without good references it makes generic stuff. Sonika FrameFinder gives you new references every day from Pinterest and other sites. Liked something while scrolling? Screenshot it, paste it and get similar references, then download and replicate it with AI or by yourself. Free and open source.",
+ "kind": "app",
+ "app": "framefinder",
+ "steps": [
+  "Download Sonika FrameFinder from this page and open it.",
+  "Browse the new references it shows each day (Pinterest, Behance, Dribbble and 20+ sites).",
+  "Liked a frame on Instagram? Screenshot it and paste it into FrameFinder to find similar references.",
+  "Optional: add a YouTube Data API key and an OpenAI-compatible key in Settings. They are stored encrypted on your PC.",
+  "Download the reference video and recreate the style with AI or by hand.",
+  "Problems or ideas? Use the feedback form on this website."
+ ],
+ "prompts": [
+  {
+   "title": "Recreate a reference style with my footage",
+   "text": "I found this reference: [ATTACH SCREENSHOT(S) OR VIDEO PATH].\nMy project: [WHAT THE VIDEO IS ABOUT], [PLATFORM AND ASPECT RATIO], editor: [PREMIERE PRO / AFTER EFFECTS / CAPCUT / OTHER].\n\n1. Describe the style: colors, fonts, layout, motion, pacing, transitions.\n2. Give me a step-by-step plan to rebuild it in my editor with my own footage and text.\n3. List anything I need (fonts, assets) and free or licensed sources for each.\n\nAdapt the style, don't copy the creator's content, logos or exact text."
+  },
+  {
+   "title": "Turn my references into a style board",
+   "text": "Here are [NUMBER] references I saved for one project: [ATTACH SCREENSHOTS].\n\nMake me a one-page style board:\n- 3 to 5 common elements across them (color palette, type, motion, framing).\n- What to avoid so my video doesn't look generic.\n- A short brief I can give to an AI tool or another editor to make the edit match this style."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "API keys go only into FrameFinder's Settings, never into a chat.",
+  "Use references for inspiration. Don't reupload other creators' work."
+ ],
+ "date": "2026-11-06T18:00:00+05:30"
 }

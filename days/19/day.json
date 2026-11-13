@@ -1,41 +1,42 @@
 {
-  "day": 19,
-  "title": "My phone controls my PC (part 1)",
-  "summary": "My laptop is almost full and my desktop has 5 TB, so I'm turning the desktop into a server: phone (Claude app) to laptop (Claude Code) to desktop. My old PC wouldn't even install Claude, so I cast it from Chrome on my laptop and let Claude debug it. This page gives you the setup prompt and my safety rules.",
-  "kind": "guide",
-  "app": null,
-  "steps": [
-    "Decide the chain: which device you start jobs from, and which device does the heavy work.",
-    "Paste the setup prompt into Claude Code on your laptop.",
-    "Approve each network, firewall or sharing change yourself, one at a time.",
-    "If the old PC won't install Claude, screen-share it to your laptop and use the troubleshooting prompt.",
-    "Run the safety check prompt when the setup is done."
-  ],
-  "prompts": [
-    {
-      "title": "Set up the phone to laptop to desktop chain",
-      "text": "I want to control my desktop PC from my laptop over my home network, and start jobs from my phone.\n\nMy setup:\n- Laptop: [WINDOWS/MAC VERSION], runs Claude Code.\n- Desktop: [WINDOWS VERSION], [STORAGE], I want to use it for storage and heavy jobs.\n- Phone: [ANDROID/IPHONE] with the Claude app.\n\n1. Explain the safest options (built-in Windows remote tools, SSH, shared folders) in simple words, with pros and cons.\n2. Recommend one for my setup.\n3. Set it up step by step.\n\nSafety rules:\n- Ask me before changing any network, firewall, sharing or security setting. One change at a time.\n- Keep everything inside my home network. Nothing exposed to the internet.\n- Never ask me to paste passwords or keys into this chat. Tell me where to type them myself.\n- At the end, list every setting you changed so I can undo it."
-    },
-    {
-      "title": "Claude won't install on my old PC",
-      "text": "Claude won't install on my older PC. I'm sharing its screen with you from my laptop.\n\nPC details: [WINDOWS VERSION, 32/64-bit, RAM, FREE DISK SPACE].\nError message: [PASTE THE EXACT ERROR OR ATTACH A SCREENSHOT].\n\n1. Tell me the most likely causes, starting with the most likely.\n2. Check the minimum requirements for this install and whether my PC meets them.\n3. Give me one fix at a time and wait for me to confirm the result.\n\nAsk before deleting files, changing system settings or installing anything. If this PC simply can't run it, say so clearly and suggest the simplest alternative."
-    },
-    {
-      "title": "Safety check my remote setup",
-      "text": "Review the remote access setup we just made between my laptop and desktop.\n\nList: every open port, every shared folder and who can access it, every remote access feature that is on, and which accounts can log in.\nFor each item, tell me if it is reachable only on my home network or also from the internet.\nFlag anything risky and suggest a safer setting. Don't change anything; show me the list and ask me first."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "Claude asks before it changes firewall, sharing or remote-access settings.",
-    "Remote access stays inside your home network until you decide otherwise.",
-    "Use strong passwords. Nothing exposed to the internet by default.",
-    "Part 1 is the setup only. Whether it worked comes in Part 2."
-  ]
+ "day": 19,
+ "title": "My phone controls my PC (part 1)",
+ "summary": "My laptop is almost full and my desktop has 5 TB, so I'm turning the desktop into a server: phone (Claude app) to laptop (Claude Code) to desktop. My old PC wouldn't even install Claude, so I cast it from Chrome on my laptop and let Claude debug it. This page gives you the setup prompt and my safety rules.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Decide the chain: which device you start jobs from, and which device does the heavy work.",
+  "Paste the setup prompt into Claude Code on your laptop.",
+  "Approve each network, firewall or sharing change yourself, one at a time.",
+  "If the old PC won't install Claude, screen-share it to your laptop and use the troubleshooting prompt.",
+  "Run the safety check prompt when the setup is done."
+ ],
+ "prompts": [
+  {
+   "title": "Set up the phone to laptop to desktop chain",
+   "text": "I want to control my desktop PC from my laptop over my home network, and start jobs from my phone.\n\nMy setup:\n- Laptop: [WINDOWS/MAC VERSION], runs Claude Code.\n- Desktop: [WINDOWS VERSION], [STORAGE], I want to use it for storage and heavy jobs.\n- Phone: [ANDROID/IPHONE] with the Claude app.\n\n1. Explain the safest options (built-in Windows remote tools, SSH, shared folders) in simple words, with pros and cons.\n2. Recommend one for my setup.\n3. Set it up step by step.\n\nSafety rules:\n- Ask me before changing any network, firewall, sharing or security setting. One change at a time.\n- Keep everything inside my home network. Nothing exposed to the internet.\n- Never ask me to paste passwords or keys into this chat. Tell me where to type them myself.\n- At the end, list every setting you changed so I can undo it."
+  },
+  {
+   "title": "Claude won't install on my old PC",
+   "text": "Claude won't install on my older PC. I'm sharing its screen with you from my laptop.\n\nPC details: [WINDOWS VERSION, 32/64-bit, RAM, FREE DISK SPACE].\nError message: [PASTE THE EXACT ERROR OR ATTACH A SCREENSHOT].\n\n1. Tell me the most likely causes, starting with the most likely.\n2. Check the minimum requirements for this install and whether my PC meets them.\n3. Give me one fix at a time and wait for me to confirm the result.\n\nAsk before deleting files, changing system settings or installing anything. If this PC simply can't run it, say so clearly and suggest the simplest alternative."
+  },
+  {
+   "title": "Safety check my remote setup",
+   "text": "Review the remote access setup we just made between my laptop and desktop.\n\nList: every open port, every shared folder and who can access it, every remote access feature that is on, and which accounts can log in.\nFor each item, tell me if it is reachable only on my home network or also from the internet.\nFlag anything risky and suggest a safer setting. Don't change anything; show me the list and ask me first."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Claude asks before it changes firewall, sharing or remote-access settings.",
+  "Remote access stays inside your home network until you decide otherwise.",
+  "Use strong passwords. Nothing exposed to the internet by default.",
+  "Part 1 is the setup only. Whether it worked comes in Part 2."
+ ],
+ "date": "2026-11-03T11:00:00+05:30"
 }

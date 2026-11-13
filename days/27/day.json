@@ -1,35 +1,36 @@
 {
-  "day": 27,
-  "title": "Will AI take editors' jobs?",
-  "summary": "AI can already do really good editing, and I get graphics like these in one or two shots. The real problem is finding references: everyone goes to the same three places and finds the same stuff. So I built Sonika FrameFinder. It shows styles right away (paper cut-out, documentary, reels, carousels, Instagram stories) from Pinterest and 20 sites like it, with new references every day.",
-  "kind": "app",
-  "app": "framefinder",
-  "steps": [
-    "Download Sonika FrameFinder from this page and open it.",
-    "Pick a style (paper cut-out, documentary, reels, carousels, Instagram stories) and browse.",
-    "New references come in every day from Pinterest and 20+ similar sites.",
-    "Paste a screenshot to find similar references.",
-    "Take your favourite reference to Claude with the prompt below to rebuild the look in one or two shots."
-  ],
-  "prompts": [
-    {
-      "title": "Rebuild a graphic from a reference in one shot",
-      "text": "Here's a reference for a graphic I want: [ATTACH SCREENSHOT].\nMy content for it: [TEXT, NUMBERS OR TOPIC THE GRAPHIC SHOWS].\nSize: [1080x1920 / 1920x1080]. Tool: [AFTER EFFECTS / PREMIERE PRO / HTML / AN AI IMAGE TOOL].\n\n1. Describe the reference style in a few lines: layout, colors, type, motion.\n2. Build my version with my content in that style. If it's an animation, give me something I can run or import directly.\n3. Keep it original: don't copy logos, watermarks or the exact text from the reference.\nIf something isn't clear, make a sensible choice and tell me what you assumed."
-    },
-    {
-      "title": "Find a fresh style for my next video",
-      "text": "My next video: [TOPIC], for [PLATFORM]. My usual style: [DESCRIBE IT].\nI want to avoid looking like everyone else.\n\nSuggest 3 visual styles that would fit (for example paper cut-out, documentary, editorial). For each: why it fits, 3 key elements, and search words I can use in FrameFinder or Pinterest to find references."
-    }
-  ],
-  "files": [
-    {
-      "label": "All prompts (Notepad)",
-      "path": "Prompt.txt"
-    }
-  ],
-  "links": [],
-  "notes": [
-    "You stay the creative one: references and taste are the part AI can't do for you.",
-    "API keys (optional) go only into FrameFinder's Settings, never into a chat."
-  ]
+ "day": 27,
+ "title": "Will AI take editors' jobs?",
+ "summary": "AI can already do really good editing, and I get graphics like these in one or two shots. The real problem is finding references: everyone goes to the same three places and finds the same stuff. So I built Sonika FrameFinder. It shows styles right away (paper cut-out, documentary, reels, carousels, Instagram stories) from Pinterest and 20 sites like it, with new references every day.",
+ "kind": "app",
+ "app": "framefinder",
+ "steps": [
+  "Download Sonika FrameFinder from this page and open it.",
+  "Pick a style (paper cut-out, documentary, reels, carousels, Instagram stories) and browse.",
+  "New references come in every day from Pinterest and 20+ similar sites.",
+  "Paste a screenshot to find similar references.",
+  "Take your favourite reference to Claude with the prompt below to rebuild the look in one or two shots."
+ ],
+ "prompts": [
+  {
+   "title": "Rebuild a graphic from a reference in one shot",
+   "text": "Here's a reference for a graphic I want: [ATTACH SCREENSHOT].\nMy content for it: [TEXT, NUMBERS OR TOPIC THE GRAPHIC SHOWS].\nSize: [1080x1920 / 1920x1080]. Tool: [AFTER EFFECTS / PREMIERE PRO / HTML / AN AI IMAGE TOOL].\n\n1. Describe the reference style in a few lines: layout, colors, type, motion.\n2. Build my version with my content in that style. If it's an animation, give me something I can run or import directly.\n3. Keep it original: don't copy logos, watermarks or the exact text from the reference.\nIf something isn't clear, make a sensible choice and tell me what you assumed."
+  },
+  {
+   "title": "Find a fresh style for my next video",
+   "text": "My next video: [TOPIC], for [PLATFORM]. My usual style: [DESCRIBE IT].\nI want to avoid looking like everyone else.\n\nSuggest 3 visual styles that would fit (for example paper cut-out, documentary, editorial). For each: why it fits, 3 key elements, and search words I can use in FrameFinder or Pinterest to find references."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "You stay the creative one: references and taste are the part AI can't do for you.",
+  "API keys (optional) go only into FrameFinder's Settings, never into a chat."
+ ],
+ "date": "2026-11-10T11:00:00+05:30"
 }

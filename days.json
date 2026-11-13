@@ -4,7 +4,7 @@
    "day": 0,
    "title": "30 days with Claude (Trailer)",
    "summary": "I'm a video editor, not a coder. I paid about ₹11,000 for Claude and let it do my real work for 30 days: editing, subtitles, apps and After Effects. This page shows you how to use every day's guide, plus two starter prompts.",
-   "date": "",
+   "date": "2026-10-15T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": false
@@ -13,7 +13,7 @@
    "day": 1,
    "title": "I gave AI my laptop (storage cleanup)",
    "summary": "My D: drive had 27 GB left out of 397 GB. Claude scanned 9,295 files, found about 155 GB of duplicates and old renders, and asked me before touching anything. Here are the prompts to do the same safely.",
-   "date": "",
+   "date": "2026-10-15T19:30:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -22,7 +22,7 @@
    "day": 2,
    "title": "AI fixed my Premiere subtitles",
    "summary": "I told Claude \"Premiere is open, do the subtitles\". My notes had spelling mistakes, but it fixed every word, and even caught the auto-captions hearing \"pottery\" when I said \"powder room\". Here are the prompts for the quick way and the hands-free way.",
-   "date": "",
+   "date": "2026-10-16T13:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -31,7 +31,7 @@
    "day": 3,
    "title": "Not a coder, built a finance app overnight",
    "summary": "My salary came in every month and disappeared. Every bank SMS already has the debit or credit amount, so I wrote the idea as a brief, gave it to Claude Code, and went to sleep. By 6 AM the app was tracking my expenses. Here is the brief, then permission, then sleep method as prompts.",
-   "date": "",
+   "date": "2026-10-17T20:30:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -40,7 +40,7 @@
    "day": 4,
    "title": "After Effects from my phone",
    "summary": "I wasn't at my laptop. From the Claude app on my phone, I asked Claude on my desktop to build a section in After Effects. It wrote the script, rendered it, checked the frames and fixed its own mistake. The 4-minute composition took about 2 hours. Here are the prompts.",
-   "date": "",
+   "date": "2026-10-18T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": true
@@ -49,7 +49,7 @@
    "day": 5,
    "title": "Free AI credits I almost missed",
    "summary": "Inside my setup I found a free credit slot I had never noticed: no subscription, no usage cost, about $124 (more than ₹10,000) already connected and running. This page is a 5-minute checklist to find unused credits in your own tools, without risking a surprise bill.",
-   "date": "",
+   "date": "2026-10-19T18:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": false
@@ -58,7 +58,7 @@
    "day": 6,
    "title": "Claude made my YouTube graphics",
    "summary": "I gave Claude one finished YouTube video as a style reference. It made the charts, maps, title cards and comparison graphics for 10 videos in that exact style. Here are the prompts: build a style sheet once, then design graphics for any script.",
-   "date": "",
+   "date": "2026-10-20T21:30:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -67,7 +67,7 @@
    "day": 7,
    "title": "400 GB freed with one Claude skill",
    "summary": "One skill scans every file, finds exact duplicates, compresses only the old huge videos with HandBrake or FFmpeg, and moves everything it would remove into a Review folder. I got about 400 GB back on a 1 TB drive. Here are the skill and the prompts.",
-   "date": "",
+   "date": "2026-10-22T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -76,7 +76,7 @@
    "day": 8,
    "title": "Stop commenting LINK",
    "summary": "Every reel says \"comment LINK and I'll DM you\". You don't need to wait. Download the reel, give the video to Claude, and say \"install this\". It works out the tool from the video, and most of the time you only click Allow. Here is the prompt and the skill.",
-   "date": "",
+   "date": "2026-10-23T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": true
@@ -85,7 +85,7 @@
    "day": 9,
    "title": "8 years of editing knowledge as Claude skills",
    "summary": "Years before AI, I built my own auto-cut tool and edited 7 videos in 7 days. Now that editing knowledge (trimming, pacing, motion design, After Effects) is written down as Claude skills. Two of them are free here, plus a prompt to turn your own know-how into a skill.",
-   "date": "",
+   "date": "2026-10-24T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -94,7 +94,7 @@
    "day": 10,
    "title": "Claude cold-emailed 100 researchers for my video",
    "summary": "For my YouTube video on Vietnam I wanted real experts, not AI answers. Claude read my script, pulled out the open questions, found 100 researchers and wrote each one a short personal email. At least 10 replied and 5 said \"let's talk\". Here are the prompts, with an approval step before anything is sent.",
-   "date": "",
+   "date": "2026-10-25T11:00:00+05:30",
    "app": null,
    "prompts": 4,
    "skill": true
@@ -103,7 +103,7 @@
    "day": 11,
    "title": "7 reels in 1 day with a Claude Code pipeline",
    "summary": "I got my own Claude Max. Claude installed FFmpeg, Python and Claude Code through PowerShell and fixed its own errors. Now every reel goes research, questions, proposal, script, my approval, edit, schedule. Here are the setup prompt and the pipeline prompts.",
-   "date": "",
+   "date": "2026-10-26T11:00:00+05:30",
    "app": null,
    "prompts": 4,
    "skill": true
@@ -112,7 +112,7 @@
    "day": 12,
    "title": "Claude built my own map animation tool",
    "summary": "I used to animate maps with GeoLayers: powerful, painful, and about a $200 subscription. Now I cut the A-roll, record voice notes like \"map here, show the school\", and Claude builds accurate maps from map tiles and satellite views with a small app it built for me. Here are the prompts.",
-   "date": "",
+   "date": "2026-10-27T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -121,7 +121,7 @@
    "day": 13,
    "title": "AI did my work, so I went outside",
    "summary": "Not a tutorial. If AI gives you hours back, don't fill them with more screen time. Close the laptop, sit with the dogs, feed the animals, help someone. This page has my \"brief it and leave\" template so you can actually walk away.",
-   "date": "",
+   "date": "2026-10-28T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": false
@@ -130,7 +130,7 @@
    "day": 14,
    "title": "2 things I never give to AI",
    "summary": "On a listing video for a ₹40-crore home with 143 shots, Claude sorted everything into A-roll, B-roll, drone and close-up bins in one go. But I always cut the base A-roll and pick the music myself. That's the feel a client pays for. Here are the prompts for the parts Claude does.",
-   "date": "",
+   "date": "2026-10-29T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": true
@@ -139,7 +139,7 @@
    "day": 15,
    "title": "Claude outreach part 2: free products",
    "summary": "Update on Day 10: of the 100 interview requests Claude sent, 16 people said yes, and I've done my first interview. Next experiment: Claude lists products I'd love to review, finds each brand's public contact, and drafts a short pitch. I approve every batch. Here are the prompts.",
-   "date": "",
+   "date": "2026-10-30T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -148,7 +148,7 @@
    "day": 16,
    "title": "Free stuff from Claude, Part 3",
    "summary": "Claude pitched 638 brands for me. 144 replied, about 40 said no, 19 were interested, and only 2 actually gave me something (one was an ElevenLabs Creator plan). This page gives you the full outreach playbook: the prompts and the rules.",
-   "date": "",
+   "date": "2026-10-31T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": true
@@ -157,7 +157,7 @@
    "day": 17,
    "title": "Free week of Claude giveaway",
    "summary": "My Claude subscription came with 3 one-week guest passes: one for me, one for a friend and one for a viewer. To enter, you fed a dog, a cow or any animal, took a photo and sent it to me as a DM. No link, no comments, no follow.",
-   "date": "",
+   "date": "2026-11-01T11:00:00+05:30",
    "app": null,
    "prompts": 0,
    "skill": false
@@ -166,7 +166,7 @@
    "day": 18,
    "title": "Free YouTube downloader (Sonika Video Downloader)",
    "summary": "Downloader websites are full of ads, popups and fake buttons, and often no 4K. So I built a free app with Codex: fixed the bugs in 2 to 3 prompts and redesigned the UI from a reference I made in ChatGPT. Paste a YouTube, Instagram or Pinterest link, pick the quality, done.",
-   "date": "",
+   "date": "2026-11-02T11:00:00+05:30",
    "app": "downloader",
    "prompts": 2,
    "skill": false
@@ -175,7 +175,7 @@
    "day": 19,
    "title": "My phone controls my PC (part 1)",
    "summary": "My laptop is almost full and my desktop has 5 TB, so I'm turning the desktop into a server: phone (Claude app) to laptop (Claude Code) to desktop. My old PC wouldn't even install Claude, so I cast it from Chrome on my laptop and let Claude debug it. This page gives you the setup prompt and my safety rules.",
-   "date": "",
+   "date": "2026-11-03T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": false
@@ -184,7 +184,7 @@
    "day": 20,
    "title": "One Claude, two jobs at once",
    "summary": "Claude edited my video and cleaned my old PC at the same time. I cut the A-roll myself, wrote one brief, and gave it my old video and an intro as references. It asked permission before touching Chrome, downloads and Premiere, then started editing and pulling music while the cleanup skill ran. This page gives you the brief template.",
-   "date": "",
+   "date": "2026-11-04T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": true
@@ -193,7 +193,7 @@
    "day": 22,
    "title": "Sonika Video Downloader: free and open source",
    "summary": "Free websites for downloading Instagram, YouTube and Pinterest videos are loaded with ads. So I made Sonika Video Downloader: copy the link, paste it, and download in up to 4K. It's free, open source, runs offline on your computer, with no sign-in and no subscription.",
-   "date": "",
+   "date": "2026-11-13T18:00:00+05:30",
    "app": "downloader",
    "prompts": 2,
    "skill": false
@@ -202,7 +202,7 @@
    "day": 23,
    "title": "Sonika FrameFinder: find editing references fast",
    "summary": "AI can do the edit, but without good references it makes generic stuff. Sonika FrameFinder gives you new references every day from Pinterest and other sites. Liked something while scrolling? Screenshot it, paste it and get similar references, then download and replicate it with AI or by yourself. Free and open source.",
-   "date": "",
+   "date": "2026-11-06T18:00:00+05:30",
    "app": "framefinder",
    "prompts": 2,
    "skill": false
@@ -211,7 +211,7 @@
    "day": 24,
    "title": "Become a creative director with AI",
    "summary": "My method to edit with AI: make your base cut as usual while an audio recorder runs in the background. Say your ideas out loud ('I want a motion graphic here') and drop screenshots into Claude as you go. When the cut is done, transcribe the recording with Gemini, put the transcript into Claude and add the prompt below.",
-   "date": "",
+   "date": "2026-11-07T11:00:00+05:30",
    "app": null,
    "prompts": 3,
    "skill": false
@@ -220,7 +220,7 @@
    "day": 25,
    "title": "Stop wasting Claude tokens: Handy",
    "summary": "When Claude analyses a video, photo or audio file, it downloads it, goes online or watches it frame by frame, and all that reading and writing eats a lot of tokens. Handy is an open-source, super-fast transcription tool: press the shortcut, talk, and it types. I'm connecting it to Claude so Claude can transcribe through it. Results are coming in a later reel.",
-   "date": "",
+   "date": "2026-11-08T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": false
@@ -229,7 +229,7 @@
    "day": 26,
    "title": "Free Claude via Agent Router: I tested it",
    "summary": "Lots of people are showing 'free Claude' through Agent Router. I tested it on my own PC: a new account went through (my GitHub is a year old), I got credits and it even ran. But Opus 5.5 didn't run on it, and connections dropped whenever usage spiked. It's not a scam, but you can't rely on it for real work. This page gives my honest notes and a prompt to safely test any 'free AI credits' offer.",
-   "date": "",
+   "date": "2026-11-09T11:00:00+05:30",
    "app": null,
    "prompts": 2,
    "skill": false
@@ -238,7 +238,7 @@
    "day": 27,
    "title": "Will AI take editors' jobs?",
    "summary": "AI can already do really good editing, and I get graphics like these in one or two shots. The real problem is finding references: everyone goes to the same three places and finds the same stuff. So I built Sonika FrameFinder. It shows styles right away (paper cut-out, documentary, reels, carousels, Instagram stories) from Pinterest and 20 sites like it, with new references every day.",
-   "date": "",
+   "date": "2026-11-10T11:00:00+05:30",
    "app": "framefinder",
    "prompts": 2,
    "skill": false
@@ -247,7 +247,7 @@
    "day": 28,
    "title": "Building my own Jarvis: Junior",
    "summary": "I'm building my own Jarvis, called Junior, to run my whole computer. The idea: build on top of Claude, Gemini and ChatGPT (I have Pro on all three), with shared memory, deciding which model to run, all by voice. Version one, built with ChatGPT, was useless. Now I'm building it with Claude Code using about $200 of free credits that expire in November. If it works, I'll share it.",
-   "date": "",
+   "date": "2026-11-11T11:00:00+05:30",
    "app": null,
    "prompts": 1,
    "skill": false
