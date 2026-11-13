@@ -30,7 +30,7 @@ jobs:
           VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
         run: |
           if [ -n "$VAULT_TOKEN" ]; then
-            git clone --depth 1 "https://x-access-token:${VAULT_TOKEN}@github.com/mehulsoni000123/sonika-vault.git" vault || echo "Vault not reachable, publishing public days only"
+            git clone --depth 1 "https://x-access-token:${VAULT_TOKEN}@github.com/mehulsoni000123/sonika-vault.git" vault || { echo "::error::Vault clone FAILED - check VAULT_TOKEN"; exit 1; }
           else
             echo "No VAULT_TOKEN secret, publishing public days only"
           fi
