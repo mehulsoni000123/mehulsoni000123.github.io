@@ -1,0 +1,35 @@
+Day 6: Claude made my YouTube graphics | free from @mehuledits.ai
+
+===== 1. WRITE MY GRAPHICS STYLE SHEET FROM FRAMES =====
+
+The attached [6 to 10] frames are my graphics style. Write a style sheet I can reuse for every video:
+- Typography: font families, weights, sizes relative to frame height, letter spacing
+- Palette: hex codes for background, primary, accent, positive and negative colours
+- Layout: margins, grid, alignment, where titles and labels sit, safe areas
+- Elements: card corner radius, shadows, icon style, chart style (bar, line, map)
+- Motion: how things enter and exit, easing, durations, stagger
+If you can't tell a value from the frames, say so and give your best guess marked "guess".
+Output it as style-sheet.md.
+
+===== 2. DESIGN GRAPHICS FOR MY SCRIPT =====
+
+Use this style sheet: [PASTE style-sheet.md]
+For each script line below, design one graphic. Pick the best format for it: stat card, comparison, timeline, map or list.
+For each graphic give me:
+1. The text on screen (short, max [8] words per line)
+2. The layout, using the style sheet values
+3. The animation beats with timings in seconds
+4. How to build it: After Effects JSX, HTML animation, or an image prompt
+Before you finish, check every graphic against the style sheet and fix any font, colour or spacing that drifts.
+
+Script lines:
+[PASTE THE SCRIPT LINES THAT NEED A GRAPHIC]
+
+===== 3. BUILD ONE GRAPHIC =====
+
+Build graphic [NUMBER] from your list as [AN AFTER EFFECTS JSX SCRIPT / AN HTML ANIMATION / A DETAILED IMAGE PROMPT].
+Size: [1920x1080 or 1080x1920]. Length: [SECONDS] seconds.
+Use only the fonts and hex colours from the style sheet.
+Keep all text inside the safe area. Explain in 3 lines how I run or use it.
+
+More free guides: mehulsoni000123.github.io

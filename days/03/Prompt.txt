@@ -1,0 +1,36 @@
+Day 3: Not a coder, built a finance app overnight | free from @mehuledits.ai
+
+===== 1. TURN MY MESSY IDEA INTO A BUILD BRIEF =====
+
+I can't code. I want an app, and my idea is messy. Interview me first, then write the brief.
+
+My idea: [DESCRIBE IT IN YOUR OWN WORDS, e.g. "My salary comes in and disappears. Every bank SMS has the debit or credit amount. I want an app that reads those messages and shows where my money goes."]
+
+Ask me 5 to 8 short questions, one at a time: the problem in one sentence, who uses it, the 3 must-have features, which device (Android, iPhone or web), what data it needs and where it is stored, anything private, and what "done" looks like.
+
+Then write a one-page brief with these sections: Problem, Users, Must-have features, Screens (each with its purpose and main elements), Data and privacy (money or health data stays on the device, no cloud by default), Out of scope, Definition of done (what I can demo).
+
+===== 2. OVERNIGHT BUILD (PASTE INTO CLAUDE CODE) =====
+
+Read [brief.md]. It contains everything I want built.
+Understand it, then ask me ALL your questions now, in one list, before I go to sleep.
+
+After I answer:
+1. Plan the build. Pick the simplest stack that works on [ANDROID / IPHONE / WEB].
+2. List the tools you need to install, then install them.
+3. Build in milestones: project setup, core feature, screens, test, final build file (for example an APK). Write the check that proves each milestone works, and run it.
+4. Work only inside [PROJECT FOLDER, e.g. D:\Projects\my-app]. Do not touch anything outside this folder.
+5. Do not sign up for anything, pay for anything, or upload my data anywhere.
+6. If something fails, try another way before you stop. Keep going.
+7. At the end, write SUMMARY.md: what you built, how to run it, and what is left.
+
+===== 3. MORNING CHECK =====
+
+Read SUMMARY.md and the project folder.
+Tell me in plain words, no code:
+1. What works right now, and how I open or install it on my [PHONE / PC].
+2. What failed or is unfinished.
+3. The 3 most useful next fixes, smallest first.
+Do not change any code until I pick one.
+
+More free guides: mehulsoni000123.github.io

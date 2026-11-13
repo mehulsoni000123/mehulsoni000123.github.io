@@ -1,0 +1,34 @@
+Day 2: AI fixed my Premiere subtitles | free from @mehuledits.ai
+
+===== 1. FIX MY AUTO-CAPTIONS (.SRT) AGAINST MY SCRIPT =====
+
+I'm attaching two things: my auto-generated subtitle file [FILE NAME.srt] and my script or notes [SCRIPT FILE]. My notes may have typos. Use them for meaning, names and numbers, not exact spelling.
+
+Fix the SRT:
+- Correct every misheard word against the script, including names, places, numbers and brand terms.
+- Keep every cue number and timestamp exactly as it is. Only change the text.
+- Max 42 characters per line, 2 lines max. Don't end a line on "a", "the" or "to".
+- If a part is not clear in the script either, write [inaudible]. Do not invent words.
+- Check that cues are numbered in order and no cue overlaps the next.
+
+Give me:
+1. The full corrected .srt, ready to save.
+2. A change list: cue number: old text -> new text.
+
+===== 2. HANDS-FREE: CLAUDE DOES THE SUBTITLES INSIDE PREMIERE =====
+
+Premiere Pro is open with my sequence [SEQUENCE NAME]. Do the subtitles for me.
+1. Run Speech to Text (transcribe the sequence) and create captions.
+2. Correct the captions against my script: [PASTE SCRIPT OR NOTES]. Fix names, places and numbers. Keep the timing.
+3. Max 42 characters per line, 2 lines max.
+4. Do not delete or move any clips, and do not change anything else in the timeline.
+5. Save a copy of the project as [PROJECT NAME]_captions before you start.
+When finished, list every word you corrected so I can check it.
+
+===== 3. MAKE MY CAPTION STYLE GUIDE (DO THIS ONCE) =====
+
+Help me write a caption style guide I can give you before every video.
+Ask me these one at a time: font, font size, text colour, highlight colour, outline or box, position on screen, max characters per line, max lines, casing (normal or ALL CAPS), emoji yes or no, and any words that must always be spelled a certain way (names, brands, places).
+Then write it as a short text file called caption-style.txt that I can paste into future chats.
+
+More free guides: mehulsoni000123.github.io

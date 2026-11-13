@@ -1,0 +1,34 @@
+{
+  "day": 13,
+  "title": "AI did my work, so I went outside",
+  "summary": "Not a tutorial. If AI gives you hours back, don't fill them with more screen time. Close the laptop, sit with the dogs, feed the animals, help someone. This page has my \"brief it and leave\" template so you can actually walk away.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Give Claude the full brief before you go (Prompt 1).",
+    "Let it ask its questions first, then approve the plan.",
+    "Tell it to report when it finishes or gets stuck, instead of waiting for you.",
+    "Close the laptop. Check the result when you're back, not every 5 minutes (Prompt 2)."
+  ],
+  "prompts": [
+    {
+      "title": "1. Brief it and leave",
+      "text": "I'm going to leave my computer. Here is the full brief.\nTask: [WHAT TO DO]\nDone means: [THE RESULT] saved at [FILE OR FOLDER LOCATION]\nFiles and folders you may use: [LIST]\nDon't: delete anything, send or post anything, buy or pay for anything, or touch [ANYTHING ELSE OFF LIMITS].\n\nBefore I go: ask me ALL your questions now in one list, then show me your plan in 5 lines or less and wait for my OK.\nAfter my OK: work on your own. If you get stuck, try another way. If you are still stuck, write down what you tried and stop. Don't wait for me in the middle.\nWhen finished, write REPORT.md in the same folder: what you did, where the result is, and what I should check."
+    },
+    {
+      "title": "2. I'm back: what happened?",
+      "text": "I'm back. Read REPORT.md and tell me in 5 bullets or less:\nwhat's done, where it is, what failed or was skipped, and the one thing I should check first.\nDon't start anything new until I say so."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    }
+  ],
+  "links": [],
+  "notes": [
+    "The rule in the brief (don't delete, send or pay) is what makes it safe to walk away.",
+    "The point is the time you get back. Spend it off the screen."
+  ]
+}

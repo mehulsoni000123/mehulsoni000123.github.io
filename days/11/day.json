@@ -1,0 +1,64 @@
+{
+  "day": 11,
+  "title": "7 reels in 1 day with a Claude Code pipeline",
+  "summary": "I got my own Claude Max. Claude installed FFmpeg, Python and Claude Code through PowerShell and fixed its own errors. Now every reel goes research, questions, proposal, script, my approval, edit, schedule. Here are the setup prompt and the pipeline prompts.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Run Prompt 1 to set up your Windows PC. Read each command before you allow it.",
+    "Install the reel-pipeline skill.",
+    "For each reel, run Prompt 2. It stops and waits for your \"approved\".",
+    "After approval, run Prompt 3 to edit and check the reel.",
+    "Run Prompt 4 to write the caption and schedule it (it asks before posting)."
+  ],
+  "prompts": [
+    {
+      "title": "1. Set up my PC for video automation",
+      "text": "Set up my Windows PC for video automation. Install FFmpeg, Python and Claude Code using winget.\n- Before each command, explain in one line what it does. Wait for my OK on anything that needs admin rights.\n- If something fails, read the error, fix it and try again.\n- At the end, check each tool works (show the version number) and tell me what was installed."
+    },
+    {
+      "title": "2. One reel: research to script (stops for approval)",
+      "text": "Use the reel-pipeline skill. Topic: [TOPIC]. Platform: [INSTAGRAM REELS / YOUTUBE SHORTS]. My niche and audience: [ONE LINE].\n1. Research: collect 5 to 8 facts with sources. Mark what is new or surprising.\n2. Ask me up to 5 questions only I can answer (my story, my opinion, my numbers).\n3. Proposal: 3 hook options, the angle, the length (30 to 60 s) and the format (talking head, split screen, screen proof).\n4. Script: hook in the first 2 seconds, one idea, proof on screen, one clear call to action. Mark each line [A-roll], [screen] or [graphic].\n5. STOP. Show me the script and wait for me to type \"approved\". Do not change it after approval without asking."
+    },
+    {
+      "title": "3. Edit and check the approved reel",
+      "text": "The script is approved. My footage is in [FOLDER]. Build the reel with Claude Code and FFmpeg.\n- Cut the A-roll on sentence boundaries, never mid-word.\n- Captions with one highlighted word per line.\n- Graphics never cover my face.\n- Audio: voice -16 LUFS, music -27 LUFS ducked under the voice, master -14 LUFS.\n- Export 1080x1920.\nThen check it: re-transcribe the export against the script, look at a grid of frames, measure loudness, and confirm my face is clear in every frame. Tell me what you found and fixed. Do not delete my source files."
+    },
+    {
+      "title": "4. Caption and schedule (asks before posting)",
+      "text": "Write the caption for this reel: the hook inside the first 125 characters, then 2 to 3 short lines, one call to action, and 4 hashtags.\nThen prepare it in my scheduler [METRICOOL / OTHER] for [DATE AND TIME, YOUR TIME ZONE].\nShow me the video file name, caption and time first. Only schedule it after I type \"schedule\". Then confirm the post time back to me."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: reel-pipeline",
+      "path": "skill-reel-pipeline/SKILL.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "FFmpeg (official site)",
+      "url": "https://ffmpeg.org"
+    },
+    {
+      "label": "Python (official site)",
+      "url": "https://www.python.org"
+    },
+    {
+      "label": "Claude Code (official GitHub)",
+      "url": "https://github.com/anthropics/claude-code"
+    },
+    {
+      "label": "Metricool (official site)",
+      "url": "https://metricool.com"
+    }
+  ],
+  "notes": [
+    "You stay the editor. You approve the script and the final cut.",
+    "Nothing gets posted without your OK. A scheduler is optional; you can also post manually."
+  ]
+}

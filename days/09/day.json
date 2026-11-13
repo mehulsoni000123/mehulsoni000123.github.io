@@ -1,0 +1,51 @@
+{
+  "day": 9,
+  "title": "8 years of editing knowledge as Claude skills",
+  "summary": "Years before AI, I built my own auto-cut tool and edited 7 videos in 7 days. Now that editing knowledge (trimming, pacing, motion design, After Effects) is written down as Claude skills. Two of them are free here, plus a prompt to turn your own know-how into a skill.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Install aroll-trim-pacing and screen-recording-zoom-build.",
+    "For a talking-head video, get a transcript with timestamps, then use Prompt 1.",
+    "For screen recordings in After Effects, use Prompt 2.",
+    "Write your first own skill with Prompt 3.",
+    "The caption fixer skill is on the Day 2 page."
+  ],
+  "prompts": [
+    {
+      "title": "1. Cut list for my talking-head A-roll",
+      "text": "Use the aroll-trim-pacing rules. Here is my raw talking-head transcript with timestamps: [ATTACH TRANSCRIPT, word-level if possible].\n1. Tell me the one-sentence promise of this video. The first 3 seconds must state or show it.\n2. Where I repeat a line, keep the last complete, confident take, unless an earlier one has clearly better energy.\n3. Cut on silences, never mid-word. Leave 80 to 120 ms of air before and after each line.\n4. Remove false starts, filler words and \"so, um\" openers. Keep a laugh or reaction if it adds personality.\n5. Never end mid-sentence. Value first, then the call to action.\nOutput a cut list table: in, out, line text, reason. Then list moments that need B-roll, a punch-in or a graphic (at least every 4 seconds), with timestamps.\nDo not edit my project. This is a plan for me to review."
+    },
+    {
+      "title": "2. Screen-recording zooms in After Effects",
+      "text": "Use the screen-recording-zoom-build skill. My screen recording is [FILE NAME], [3840x2160], and it is in [PATH TO PROJECT.aep].\nMoments to show: [LIST: time, what to zoom on, highlight or lower third text]\n1. Save a backup of the project first.\n2. Keep the comp at the source size. Write one helper .jsx with frame(window), addRect and setKeys.\n3. Make each beat {start, dur, window:[x,y,w,h], ease}. Zoom gently (max 2.2x), eased, with 0.4 s hold after each move. Never show the edge of the recording.\n4. Highlights: rounded rectangles that keep the same stroke width while zooming. Lower thirds: title plus subline, 0.3 s fade or slide, inside title-safe.\n5. Render a still at every beat, check framing, text and safe areas, fix problems and re-run.\nTell me what you built and which beats I should check by eye."
+    },
+    {
+      "title": "3. Turn my editing know-how into a Claude skill",
+      "text": "I want to turn one thing I do well as an editor into a Claude skill: [e.g. \"how I pace a 30-second reel\" / \"how I pick B-roll\" / \"how I name and sort footage\"].\nInterview me with 6 to 8 questions, one at a time: what goes in, the exact steps, my rules that must never break, common mistakes, and what the finished output looks like.\nThen write a SKILL.md with:\n- a top block with name: (lowercase-with-dashes) and description: (what it does and when to use it)\n- sections: Inputs, Rules, Steps, Output, Never\nKeep it short and specific. Then tell me where to save it: ~/.claude/skills/[NAME]/SKILL.md"
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: aroll-trim-pacing",
+      "path": "skill-aroll-trim-pacing/SKILL.md"
+    },
+    {
+      "label": "Claude skill: screen-recording-zoom-build",
+      "path": "skill-screen-recording-zoom-build/SKILL.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "Claude Code (official GitHub)",
+      "url": "https://github.com/anthropics/claude-code"
+    }
+  ],
+  "notes": [
+    "Skills hold your rules. You still review the cut and the final edit."
+  ]
+}

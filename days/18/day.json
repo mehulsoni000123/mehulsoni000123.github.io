@@ -1,0 +1,35 @@
+{
+  "day": 18,
+  "title": "Free YouTube downloader (Sonika Video Downloader)",
+  "summary": "Downloader websites are full of ads, popups and fake buttons, and often no 4K. So I built a free app with Codex: fixed the bugs in 2 to 3 prompts and redesigned the UI from a reference I made in ChatGPT. Paste a YouTube, Instagram or Pinterest link, pick the quality, done.",
+  "kind": "app",
+  "app": "downloader",
+  "steps": [
+    "Download Sonika Video Downloader from this page (Windows 10/11).",
+    "Open the app. No login, no ads.",
+    "Copy the link of a YouTube, Instagram or Pinterest video.",
+    "Paste it into the app and pick the quality.",
+    "Click download. Only download videos you own or have permission to use."
+  ],
+  "prompts": [
+    {
+      "title": "Break down a reference video",
+      "text": "I downloaded a reference video for my edit: [VIDEO FILE PATH OR DESCRIBE IT / ATTACH SCREENSHOTS].\n\nBreak it down so I can learn from it:\n1. A shot list with rough timestamps: shot type, what's on screen, text on screen.\n2. The pacing: average cut length, where it speeds up or slows down.\n3. Graphics and transitions used, and how I could rebuild each one in [PREMIERE PRO / YOUR EDITOR].\n4. What makes the hook work in the first 3 seconds.\n\nKeep it short and practical. Don't copy the creator's content; give me ideas I can adapt to my own footage."
+    },
+    {
+      "title": "Redesign my app's UI from a reference image",
+      "text": "I have a small app I built: [APP FOLDER PATH]. I made a UI reference image: [ATTACH IMAGE].\n\nRedesign the app's interface to match the reference: layout, colors, spacing, fonts and buttons. Rules:\n- Keep every feature working exactly as it does now.\n- Change only UI code. Show me the plan and the list of files you will change before editing.\n- Make a backup or work on a new git branch first.\n- After the change, run the app and tell me how to test each button."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    }
+  ],
+  "links": [],
+  "notes": [
+    "Only download videos you own or have permission to use.",
+    "Works with YouTube, Instagram and Pinterest links. Windows 10/11."
+  ]
+}

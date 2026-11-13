@@ -1,0 +1,31 @@
+Day 20: One Claude, two jobs at once | free from @mehuledits.ai
+
+===== EDIT BRIEF TEMPLATE =====
+
+Project: [PROJECT NAME].
+The A-roll is already cut: [A-ROLL FILE OR SEQUENCE PATH].
+Style reference (my old video): [OLD VIDEO PATH OR LINK].
+Intro reference: [LINK OR FILE].
+Goal: [LENGTH], [PLATFORM, e.g. 9:16 Instagram reel].
+
+What I want: [GRAPHICS / CAPTIONS / B-ROLL / MUSIC / SFX, in your own words].
+
+Allowed: Premiere Pro, Chrome, downloads into [DOWNLOAD FOLDER].
+Not allowed: deleting files, buying anything, posting anywhere, changing my A-roll cut.
+Ask me before installing anything and before using any app for the first time.
+Use only music and footage I'm allowed to use, and list the source of each one.
+
+When done: export to [EXPORT FOLDER] and tell me what you did, with timestamps of every change.
+
+===== SAFE CLEANUP RUNNING IN THE BACKGROUND =====
+
+While you work on my edit, I also want to free up space on [DRIVE OR PC].
+
+Do a dry run first:
+1. Find large and duplicate files, old installers, temp files and caches.
+2. Group them by folder with sizes.
+3. Mark each item: safe to remove, check with me, or keep.
+
+Do not delete, move or compress anything yet. Never touch [FOLDERS TO PROTECT, e.g. project files, client footage]. Show me the report and wait for my approval for each group.
+
+More free guides: mehulsoni000123.github.io

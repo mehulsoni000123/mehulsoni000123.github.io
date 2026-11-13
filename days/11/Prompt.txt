@@ -1,0 +1,35 @@
+Day 11: 7 reels in 1 day with a Claude Code pipeline | free from @mehuledits.ai
+
+===== 1. SET UP MY PC FOR VIDEO AUTOMATION =====
+
+Set up my Windows PC for video automation. Install FFmpeg, Python and Claude Code using winget.
+- Before each command, explain in one line what it does. Wait for my OK on anything that needs admin rights.
+- If something fails, read the error, fix it and try again.
+- At the end, check each tool works (show the version number) and tell me what was installed.
+
+===== 2. ONE REEL: RESEARCH TO SCRIPT (STOPS FOR APPROVAL) =====
+
+Use the reel-pipeline skill. Topic: [TOPIC]. Platform: [INSTAGRAM REELS / YOUTUBE SHORTS]. My niche and audience: [ONE LINE].
+1. Research: collect 5 to 8 facts with sources. Mark what is new or surprising.
+2. Ask me up to 5 questions only I can answer (my story, my opinion, my numbers).
+3. Proposal: 3 hook options, the angle, the length (30 to 60 s) and the format (talking head, split screen, screen proof).
+4. Script: hook in the first 2 seconds, one idea, proof on screen, one clear call to action. Mark each line [A-roll], [screen] or [graphic].
+5. STOP. Show me the script and wait for me to type "approved". Do not change it after approval without asking.
+
+===== 3. EDIT AND CHECK THE APPROVED REEL =====
+
+The script is approved. My footage is in [FOLDER]. Build the reel with Claude Code and FFmpeg.
+- Cut the A-roll on sentence boundaries, never mid-word.
+- Captions with one highlighted word per line.
+- Graphics never cover my face.
+- Audio: voice -16 LUFS, music -27 LUFS ducked under the voice, master -14 LUFS.
+- Export 1080x1920.
+Then check it: re-transcribe the export against the script, look at a grid of frames, measure loudness, and confirm my face is clear in every frame. Tell me what you found and fixed. Do not delete my source files.
+
+===== 4. CAPTION AND SCHEDULE (ASKS BEFORE POSTING) =====
+
+Write the caption for this reel: the hook inside the first 125 characters, then 2 to 3 short lines, one call to action, and 4 hashtags.
+Then prepare it in my scheduler [METRICOOL / OTHER] for [DATE AND TIME, YOUR TIME ZONE].
+Show me the video file name, caption and time first. Only schedule it after I type "schedule". Then confirm the post time back to me.
+
+More free guides: mehulsoni000123.github.io

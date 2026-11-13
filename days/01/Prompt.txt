@@ -1,0 +1,36 @@
+Day 1: I gave AI my laptop (storage cleanup) | free from @mehuledits.ai
+
+===== 1. REPORT ONLY (CHANGES NOTHING) =====
+
+You are auditing my storage drives. Do NOT move, rename or delete anything in this step.
+Drives to scan: [D:, E:]
+Never open or touch these folders: [CLIENT PROJECTS FOLDER], [PERSONAL PHOTOS FOLDER], Windows and Program Files.
+
+Build a report with:
+1. The 20 biggest folders, with sizes.
+2. Duplicate files: same name and same size first, then confirm with a file hash. Show which copy you would keep and why.
+3. Old render, preview and cache files (for example Media Cache, Peak Files, Premiere Auto-Save, *.cfa, *.pek).
+4. Files over 500 MB that have not been opened or changed in 6 months.
+
+Show it as a table per category: path, size, last modified, reason. End with the total space I could get back.
+Then stop and wait for me to choose what to act on.
+
+===== 2. MOVE APPROVED ITEMS TO _REVIEW (UNDOABLE) =====
+
+From your report, act ONLY on these items: [LIST THE CATEGORIES OR ROWS I APPROVED]
+Rules:
+- Never delete anything permanently.
+- Move each item into [D:\_Review] on the same drive, keeping its original folder structure.
+- Before moving, write a CSV log at [D:\_Review\move_log.csv] with: original_path, new_path, size_bytes, reason.
+- Ask me before any single move bigger than 10 GB.
+- Skip anything you are not sure about and list it for me.
+When done, tell me the space freed and where the log is.
+
+===== 3. UNDO: PUT FILES BACK FROM THE LOG =====
+
+Read [D:\_Review\move_log.csv].
+Move every file listed back from new_path to original_path. Only do the rows I list here: [ALL / ROW NUMBERS / FILE NAMES].
+If a file already exists at the original path, do not overwrite it. List it for me instead.
+Show me the plan first, wait for my "yes", then do it and report what was restored.
+
+More free guides: mehulsoni000123.github.io

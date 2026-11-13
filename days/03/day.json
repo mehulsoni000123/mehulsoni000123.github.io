@@ -1,0 +1,49 @@
+{
+  "day": 3,
+  "title": "Not a coder, built a finance app overnight",
+  "summary": "My salary came in every month and disappeared. Every bank SMS already has the debit or credit amount, so I wrote the idea as a brief, gave it to Claude Code, and went to sleep. By 6 AM the app was tracking my expenses. Here is the brief, then permission, then sleep method as prompts.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Talk the idea out with Prompt 1. Claude interviews you and writes a one-page brief.",
+    "Save the brief as a .md or PDF file in an empty project folder.",
+    "Open Claude Code in that folder and paste Prompt 2.",
+    "Answer ALL its questions before you go to sleep. Then let it run.",
+    "In the morning, use Prompt 3 to see what was built and how to run it."
+  ],
+  "prompts": [
+    {
+      "title": "1. Turn my messy idea into a build brief",
+      "text": "I can't code. I want an app, and my idea is messy. Interview me first, then write the brief.\n\nMy idea: [DESCRIBE IT IN YOUR OWN WORDS, e.g. \"My salary comes in and disappears. Every bank SMS has the debit or credit amount. I want an app that reads those messages and shows where my money goes.\"]\n\nAsk me 5 to 8 short questions, one at a time: the problem in one sentence, who uses it, the 3 must-have features, which device (Android, iPhone or web), what data it needs and where it is stored, anything private, and what \"done\" looks like.\n\nThen write a one-page brief with these sections: Problem, Users, Must-have features, Screens (each with its purpose and main elements), Data and privacy (money or health data stays on the device, no cloud by default), Out of scope, Definition of done (what I can demo)."
+    },
+    {
+      "title": "2. Overnight build (paste into Claude Code)",
+      "text": "Read [brief.md]. It contains everything I want built.\nUnderstand it, then ask me ALL your questions now, in one list, before I go to sleep.\n\nAfter I answer:\n1. Plan the build. Pick the simplest stack that works on [ANDROID / IPHONE / WEB].\n2. List the tools you need to install, then install them.\n3. Build in milestones: project setup, core feature, screens, test, final build file (for example an APK). Write the check that proves each milestone works, and run it.\n4. Work only inside [PROJECT FOLDER, e.g. D:\\Projects\\my-app]. Do not touch anything outside this folder.\n5. Do not sign up for anything, pay for anything, or upload my data anywhere.\n6. If something fails, try another way before you stop. Keep going.\n7. At the end, write SUMMARY.md: what you built, how to run it, and what is left."
+    },
+    {
+      "title": "3. Morning check",
+      "text": "Read SUMMARY.md and the project folder.\nTell me in plain words, no code:\n1. What works right now, and how I open or install it on my [PHONE / PC].\n2. What failed or is unfinished.\n3. The 3 most useful next fixes, smallest first.\nDo not change any code until I pick one."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: overnight-app-brief",
+      "path": "skill-overnight-app-brief/SKILL.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "Claude Code (official GitHub)",
+      "url": "https://github.com/anthropics/claude-code"
+    }
+  ],
+  "notes": [
+    "Claude Code works best when it asks its questions up front. Answer them before you leave it alone.",
+    "Keep it inside one project folder.",
+    "Money apps: keep your data on your phone, no cloud. Never share bank screenshots publicly."
+  ]
+}

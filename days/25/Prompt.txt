@@ -1,0 +1,25 @@
+Day 25: Stop wasting Claude tokens: Handy | free from @mehuledits.ai
+
+===== TRANSCRIBE LOCALLY TO SAVE TOKENS =====
+
+I want to stop uploading audio and video files to you for analysis because it uses a lot of tokens. Help me transcribe them locally on my PC instead, and then I'll give you only the text.
+
+My PC: [WINDOWS / MAC], [GPU IF ANY].
+I already have: [HANDY / NOTHING YET].
+File to test with: [FILE PATH].
+
+1. Check what's already installed that can do offline speech-to-text (for example Handy and its model, or ffmpeg for extracting audio).
+2. Suggest the simplest local setup. Ask me before installing anything.
+3. Transcribe the test file to a text file next to it: [OUTPUT FOLDER].
+4. Tell me how to repeat this myself next time in 2 or 3 steps.
+
+Everything stays on my computer. Don't upload the file anywhere.
+
+===== WORK FROM MY TRANSCRIPT, NOT THE VIDEO =====
+
+Here is the transcript of my video, made locally: [PASTE TRANSCRIPT].
+
+Work only from this text. Don't ask me to upload the video.
+[YOUR TASK, e.g. write captions / find the best 30-second clip / list the key points / write a title and description].
+
+More free guides: mehulsoni000123.github.io

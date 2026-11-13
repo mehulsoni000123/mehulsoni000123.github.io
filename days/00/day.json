@@ -1,0 +1,44 @@
+{
+  "day": 0,
+  "title": "30 days with Claude (Trailer)",
+  "summary": "I'm a video editor, not a coder. I paid about ₹11,000 for Claude and let it do my real work for 30 days: editing, subtitles, apps and After Effects. This page shows you how to use every day's guide, plus two starter prompts.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Get a Claude account. Pro is enough to start. I use Max because I run long jobs.",
+    "Install the Claude desktop app. Add Claude Code for the heavier tasks.",
+    "Open the page for the reel you watched and copy its prompts.",
+    "If the day has a SKILL.md, install it with the first prompt below.",
+    "Change everything in [SQUARE BRACKETS] before you run a prompt."
+  ],
+  "prompts": [
+    {
+      "title": "Install a skill from this site",
+      "text": "I want to install a Claude skill. The SKILL.md text is pasted below.\n1. Read the \"name:\" line at the top of the file.\n2. Create the folder ~/.claude/skills/[SKILL NAME]/ (on Windows: C:\\Users\\[MY USERNAME]\\.claude\\skills\\[SKILL NAME]\\).\n3. Save the text below as SKILL.md inside that folder, exactly as it is. Do not change any rules in it.\n4. Tell me the full path where you saved it, and one example sentence I can type to use this skill.\nDo not install or run anything else.\n\n[PASTE THE SKILL.MD TEXT HERE]"
+    },
+    {
+      "title": "My 3 rules for any real project (paste at the start of a session)",
+      "text": "Before we start, follow these rules for this whole session:\n1. Ask me before you delete, send, post, buy or pay for anything. Show me exactly what will happen first.\n2. If my request is a one-line wish, turn it into a short written brief (goal, what \"done\" means, what you must not touch) and ask me to confirm it before you start.\n3. When you finish, tell me what you changed, where the files are, and what I should check myself before it goes to a client.\nReply \"OK\" and ask me for today's task."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    }
+  ],
+  "links": [
+    {
+      "label": "Claude desktop and mobile apps (official)",
+      "url": "https://claude.ai/download"
+    },
+    {
+      "label": "Claude Code (official GitHub)",
+      "url": "https://github.com/anthropics/claude-code"
+    }
+  ],
+  "notes": [
+    "Every guide here is what I actually used. Results on your PC can be different.",
+    "Make it ask before it deletes, sends or pays for anything. Check the output yourself before it goes to a client."
+  ]
+}

@@ -1,0 +1,21 @@
+Day 27: Will AI take editors' jobs? | free from @mehuledits.ai
+
+===== REBUILD A GRAPHIC FROM A REFERENCE IN ONE SHOT =====
+
+Here's a reference for a graphic I want: [ATTACH SCREENSHOT].
+My content for it: [TEXT, NUMBERS OR TOPIC THE GRAPHIC SHOWS].
+Size: [1080x1920 / 1920x1080]. Tool: [AFTER EFFECTS / PREMIERE PRO / HTML / AN AI IMAGE TOOL].
+
+1. Describe the reference style in a few lines: layout, colors, type, motion.
+2. Build my version with my content in that style. If it's an animation, give me something I can run or import directly.
+3. Keep it original: don't copy logos, watermarks or the exact text from the reference.
+If something isn't clear, make a sensible choice and tell me what you assumed.
+
+===== FIND A FRESH STYLE FOR MY NEXT VIDEO =====
+
+My next video: [TOPIC], for [PLATFORM]. My usual style: [DESCRIBE IT].
+I want to avoid looking like everyone else.
+
+Suggest 3 visual styles that would fit (for example paper cut-out, documentary, editorial). For each: why it fits, 3 key elements, and search words I can use in FrameFinder or Pinterest to find references.
+
+More free guides: mehulsoni000123.github.io

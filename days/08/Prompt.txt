@@ -1,0 +1,20 @@
+Day 8: Stop commenting LINK | free from @mehuledits.ai
+
+===== 1. IDENTIFY AND INSTALL THE TOOL FROM THIS REEL =====
+
+This video [FILE NAME] is a reel that shows a tool or workflow. Watch it and install it for me safely.
+1. Look at frames every 1 to 2 seconds and read all on-screen text: tool names, websites, GitHub repos, commands. Transcribe the audio if there is any.
+2. Tell me exactly what the tool is and find its OFFICIAL source: the maker's website or the original GitHub repo. Never use links from comments or DMs.
+3. Tell me: is it free or paid, who makes it, is it actively maintained, and what permissions it needs. Warn me if it asks for passwords, API keys or payment.
+4. List the install steps for my system: [WINDOWS 11 / MAC], including anything it depends on (Python, Node, FFmpeg).
+5. Install it. Ask me before anything that needs admin rights, changes system settings, or costs money.
+6. Run a small test and show me it works.
+7. Tell me where it is installed, how to open it, and how to uninstall it.
+
+===== 2. JUST CHECK IT FIRST (NO INSTALL) =====
+
+Watch this reel [FILE NAME] and tell me what tool or workflow it shows. Do not install anything.
+Give me: the tool name, its official website or GitHub page, free or paid, who makes it, what it needs access to, and any red flags (asks for passwords, keys or payment, unknown maker, no official source).
+Finish with your honest opinion: safe to try, try with care, or skip.
+
+More free guides: mehulsoni000123.github.io

@@ -1,0 +1,25 @@
+Day 22: Sonika Video Downloader: free and open source | free from @mehuledits.ai
+
+===== WRITE A CLEAR BUG REPORT =====
+
+Help me write a clear bug report for a free app, Sonika Video Downloader.
+
+What happened: [DESCRIBE THE PROBLEM IN YOUR OWN WORDS].
+What I expected: [WHAT SHOULD HAVE HAPPENED].
+My PC: [WINDOWS 10 or 11], app version [IF SHOWN].
+Link type: [YOUTUBE / INSTAGRAM / PINTEREST]. Don't include the private link itself if it's not public.
+Error message: [PASTE IT OR DESCRIBE THE SCREENSHOT].
+
+Turn this into a short report with: title, steps to reproduce, expected result, actual result, PC details. Keep it under 120 words so I can paste it into the feedback form.
+
+===== ORGANISE MY DOWNLOADED REFERENCES =====
+
+My downloads folder for reference videos is a mess: [FOLDER PATH].
+
+Plan a clean structure, for example by platform (YouTube, Instagram, Pinterest) and by type (hooks, transitions, graphics, b-roll).
+1. Show me the folder plan and a list of which file goes where.
+2. Suggest clear file names: [DATE]_[PLATFORM]_[SHORT DESCRIPTION].
+
+This is a dry run. Don't move, rename or delete anything until I say OK. Never delete files.
+
+More free guides: mehulsoni000123.github.io

@@ -1,0 +1,31 @@
+Day 24: Become a creative director with AI | free from @mehuledits.ai
+
+===== TRANSCRIBE MY VOICE NOTES =====
+
+This is an audio recording of me talking while I edit a video: [ATTACH AUDIO].
+
+Transcribe it word for word. Keep any timecodes I say out loud (like "at 1:20"). Split it into one line per idea. Don't summarise and don't add anything I didn't say.
+
+===== CREATIVE DIRECTOR PROMPT =====
+
+You are my assistant editor. I'm the creative director.
+
+Project: [WHAT THE VIDEO IS ABOUT], [LENGTH], [PLATFORM AND ASPECT RATIO], edited in [PREMIERE PRO / YOUR EDITOR].
+Below is the transcript of my voice notes recorded while I made the base cut. I also shared reference screenshots in this chat.
+
+Transcript:
+[PASTE TRANSCRIPT]
+
+1. Turn my notes into a numbered edit list: timecode, what I asked for (motion graphic, b-roll, SFX, text, zoom), which reference screenshot it matches.
+2. For each item, say how you'll get the asset: AI image (e.g. Gemini), a resource found on YouTube, or a video I'm allowed to download.
+3. Show me the list and wait for my OK before you start.
+4. Then work through it one item at a time and save every asset into [ASSETS FOLDER] with clear names that match the edit list numbers.
+
+Rules: ask me before using Chrome or any app for the first time, before downloading anything, and before signing in anywhere. Don't buy anything, don't post anything, don't change my base cut. Use only assets I'm allowed to use and note the source of each.
+
+===== QUICK CHECK BEFORE EXPORT =====
+
+Compare my edit list with what's now on the timeline (or with the assets folder [ASSETS FOLDER]).
+Tell me which items are done, which are missing, and anything that doesn't match my notes. Don't change anything; just give me the checklist.
+
+More free guides: mehulsoni000123.github.io

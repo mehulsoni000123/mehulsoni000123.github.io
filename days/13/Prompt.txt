@@ -1,0 +1,21 @@
+Day 13: AI did my work, so I went outside | free from @mehuledits.ai
+
+===== 1. BRIEF IT AND LEAVE =====
+
+I'm going to leave my computer. Here is the full brief.
+Task: [WHAT TO DO]
+Done means: [THE RESULT] saved at [FILE OR FOLDER LOCATION]
+Files and folders you may use: [LIST]
+Don't: delete anything, send or post anything, buy or pay for anything, or touch [ANYTHING ELSE OFF LIMITS].
+
+Before I go: ask me ALL your questions now in one list, then show me your plan in 5 lines or less and wait for my OK.
+After my OK: work on your own. If you get stuck, try another way. If you are still stuck, write down what you tried and stop. Don't wait for me in the middle.
+When finished, write REPORT.md in the same folder: what you did, where the result is, and what I should check.
+
+===== 2. I'M BACK: WHAT HAPPENED? =====
+
+I'm back. Read REPORT.md and tell me in 5 bullets or less:
+what's done, where it is, what failed or was skipped, and the one thing I should check first.
+Don't start anything new until I say so.
+
+More free guides: mehulsoni000123.github.io

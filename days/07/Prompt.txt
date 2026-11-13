@@ -1,0 +1,37 @@
+Day 7: 400 GB freed with one Claude skill | free from @mehuledits.ai
+
+===== 1. SCAN AND REPORT (READ ONLY) =====
+
+Run a drive cleanup scan on [E:]. Read only: do not move, rename, delete or compress anything yet.
+Never touch: [MY LATEST PROJECTS FOLDER], [CLIENT DELIVERIES FOLDER], [PHOTOS FOLDER], and hidden or system folders.
+
+1. List every file with path, size and modified date.
+2. Find exact duplicates: group by size, then confirm with a hash. Say which copy you would keep.
+3. Find junk: editor caches (Media Cache, .pek, .cfa, auto-saves, preview renders), temp files, old installers, empty folders.
+4. Check videos over 500 MB with ffprobe: codec, resolution, fps, bitrate, HDR, alpha (transparency).
+5. Report: count and GB per category, the biggest folders, and an estimate of how much compressing old big videos to H.265 would save.
+Check if HandBrake or FFmpeg is installed. If neither is, ask me before installing one.
+Then stop and wait for me to choose.
+
+===== 2. MOVE DUPLICATES AND JUNK TO REVIEW (NEVER DELETE) =====
+
+Act only on: [EXACT DUPLICATES / SAFE JUNK / THE ROWS I APPROVED].
+- Create [E:]\Review\Exact Duplicates, [E:]\Review\Safe Junk and [E:]\Review\Quick Look.
+- Move the chosen items there, keeping their folder paths.
+- Write [E:]\Review\MOVE_MANIFEST.tsv with old path and new path for every file.
+- Never delete anything. Ask me before any single move over 10 GB.
+Report the GB moved and where the manifest is.
+
+===== 3. COMPRESS OLD BIG VIDEOS (3-FILE PILOT FIRST) =====
+
+Compress old, large videos on [E:] to H.265.
+Candidates: videos over 500 MB, not in my protected folders, with no alpha/transparency. Skip HDR files unless I say yes. Skip anything from the last [3 MONTHS].
+
+1. Pilot: pick 3 files and show me the list first.
+2. Encode with HandBrake (preset "H.265 MKV 1080p30", or match the source resolution) or FFmpeg (-c:v libx265 -crf 24, or hevc_nvenc -cq 25 on an NVIDIA card). Copy the audio as it is.
+3. Check each new file: same duration, resolution and audio tracks, plays to the end, and is under 85% of the original size. If not, reject it.
+4. Swap: move the ORIGINAL to [E:]\Review\Compressed Originals\<same path>, and put the new file at the original path with the same name.
+5. Log every file as OK, REJECTED or FAIL.
+Show me the pilot results and wait for my "go" before doing the rest.
+
+More free guides: mehulsoni000123.github.io

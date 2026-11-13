@@ -1,0 +1,47 @@
+{
+ "day": 16,
+ "title": "Free stuff from Claude, Part 3",
+ "summary": "Claude pitched 638 brands for me. 144 replied, about 40 said no, 19 were interested, and only 2 actually gave me something (one was an ElevenLabs Creator plan). This page gives you the full outreach playbook: the prompts and the rules.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Ask Claude to build a list of products you would genuinely use and review, with public contact emails only.",
+  "Read the list and cut anything you would not really use.",
+  "Let Claude draft a short, honest pitch for each brand. Nothing is sent yet.",
+  "Approve and send in small batches. Track every reply in a sheet.",
+  "Sort replies into no, interested and sent something. Reply to the interested ones yourself.",
+  "Disclose every free product in your content."
+ ],
+ "prompts": [
+  {
+   "title": "Build the brand list and pitches",
+   "text": "I'm a creator in [YOUR NICHE] with [YOUR REAL AUDIENCE SIZE] followers on [PLATFORMS]. I want to ask brands for products to review honestly.\n\n1. Make a list of [NUMBER] products in my niche that I would genuinely use and review.\n2. For each one, find the brand's official PR, creator or partnerships email. Use public pages only (official website, press page, creator program page). If you can't find a public email, write \"not found\". Never guess an email address.\n3. Draft a pitch of about 90 words for each brand: who I am, my real audience size, what content I would make, and my rule that every review is honest and every free product is disclosed.\n\nOutput a table with: brand, product, contact email, source page where you found it, pitch.\nDo not send anything. I will review the list first."
+  },
+  {
+   "title": "Send in small batches (with my approval)",
+   "text": "Here is my approved brand list and pitches: [PASTE LIST OR FILE PATH].\n\nPrepare the first batch of [10-20] emails as drafts in my email app. Rules:\n- Show me each batch before anything is sent. Ask me before sending, every time.\n- One email per brand. No attachments unless I add them.\n- Plain text, my real name and handle [YOUR HANDLE] in the signature.\n- Log each email in a sheet: brand, contact, date sent, status = sent.\n- One follow-up per brand after 7 days at most. Draft it, then ask me before sending.\nStop after this batch and wait for my OK."
+  },
+  {
+   "title": "Sort the replies",
+   "text": "Here are the replies to my brand pitches: [PASTE REPLIES OR POINT TO THE EMAIL LABEL/FOLDER].\n\n1. Sort every reply into: No, Interested (needs a reply), Sent / offered something, Auto-reply or unclear.\n2. Update my tracking sheet with the status and one line of what they said.\n3. For the Interested ones, draft a short, honest reply that answers their questions. Do not promise views, numbers or dates I haven't given you.\n4. Give me a summary count for each group.\n\nDo not send any reply. Show me the drafts and ask me first."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: expert-outreach (from Day 10)",
+   "path": "skill-expert-outreach/SKILL.md"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Most brands said no or did not reply. Expect a small yes rate.",
+  "Use public business contacts only. Never scrape personal emails.",
+  "Claude drafts, you approve. Nothing is sent without your OK.",
+  "Be honest about your audience size and always disclose free products.",
+  "Uses the same rules as the Day 10 outreach skill (on the Day 10 page)."
+ ]
+}

@@ -1,0 +1,43 @@
+Day 19: My phone controls my PC (part 1) | free from @mehuledits.ai
+
+===== SET UP THE PHONE TO LAPTOP TO DESKTOP CHAIN =====
+
+I want to control my desktop PC from my laptop over my home network, and start jobs from my phone.
+
+My setup:
+- Laptop: [WINDOWS/MAC VERSION], runs Claude Code.
+- Desktop: [WINDOWS VERSION], [STORAGE], I want to use it for storage and heavy jobs.
+- Phone: [ANDROID/IPHONE] with the Claude app.
+
+1. Explain the safest options (built-in Windows remote tools, SSH, shared folders) in simple words, with pros and cons.
+2. Recommend one for my setup.
+3. Set it up step by step.
+
+Safety rules:
+- Ask me before changing any network, firewall, sharing or security setting. One change at a time.
+- Keep everything inside my home network. Nothing exposed to the internet.
+- Never ask me to paste passwords or keys into this chat. Tell me where to type them myself.
+- At the end, list every setting you changed so I can undo it.
+
+===== CLAUDE WON'T INSTALL ON MY OLD PC =====
+
+Claude won't install on my older PC. I'm sharing its screen with you from my laptop.
+
+PC details: [WINDOWS VERSION, 32/64-bit, RAM, FREE DISK SPACE].
+Error message: [PASTE THE EXACT ERROR OR ATTACH A SCREENSHOT].
+
+1. Tell me the most likely causes, starting with the most likely.
+2. Check the minimum requirements for this install and whether my PC meets them.
+3. Give me one fix at a time and wait for me to confirm the result.
+
+Ask before deleting files, changing system settings or installing anything. If this PC simply can't run it, say so clearly and suggest the simplest alternative.
+
+===== SAFETY CHECK MY REMOTE SETUP =====
+
+Review the remote access setup we just made between my laptop and desktop.
+
+List: every open port, every shared folder and who can access it, every remote access feature that is on, and which accounts can log in.
+For each item, tell me if it is reachable only on my home network or also from the internet.
+Flag anything risky and suggest a safer setting. Don't change anything; show me the list and ask me first.
+
+More free guides: mehulsoni000123.github.io

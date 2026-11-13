@@ -1,0 +1,37 @@
+Day 16: Free stuff from Claude, Part 3 | free from @mehuledits.ai
+
+===== BUILD THE BRAND LIST AND PITCHES =====
+
+I'm a creator in [YOUR NICHE] with [YOUR REAL AUDIENCE SIZE] followers on [PLATFORMS]. I want to ask brands for products to review honestly.
+
+1. Make a list of [NUMBER] products in my niche that I would genuinely use and review.
+2. For each one, find the brand's official PR, creator or partnerships email. Use public pages only (official website, press page, creator program page). If you can't find a public email, write "not found". Never guess an email address.
+3. Draft a pitch of about 90 words for each brand: who I am, my real audience size, what content I would make, and my rule that every review is honest and every free product is disclosed.
+
+Output a table with: brand, product, contact email, source page where you found it, pitch.
+Do not send anything. I will review the list first.
+
+===== SEND IN SMALL BATCHES (WITH MY APPROVAL) =====
+
+Here is my approved brand list and pitches: [PASTE LIST OR FILE PATH].
+
+Prepare the first batch of [10-20] emails as drafts in my email app. Rules:
+- Show me each batch before anything is sent. Ask me before sending, every time.
+- One email per brand. No attachments unless I add them.
+- Plain text, my real name and handle [YOUR HANDLE] in the signature.
+- Log each email in a sheet: brand, contact, date sent, status = sent.
+- One follow-up per brand after 7 days at most. Draft it, then ask me before sending.
+Stop after this batch and wait for my OK.
+
+===== SORT THE REPLIES =====
+
+Here are the replies to my brand pitches: [PASTE REPLIES OR POINT TO THE EMAIL LABEL/FOLDER].
+
+1. Sort every reply into: No, Interested (needs a reply), Sent / offered something, Auto-reply or unclear.
+2. Update my tracking sheet with the status and one line of what they said.
+3. For the Interested ones, draft a short, honest reply that answers their questions. Do not promise views, numbers or dates I haven't given you.
+4. Give me a summary count for each group.
+
+Do not send any reply. Show me the drafts and ask me first.
+
+More free guides: mehulsoni000123.github.io

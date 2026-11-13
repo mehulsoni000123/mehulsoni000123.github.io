@@ -1,0 +1,40 @@
+{
+ "day": 20,
+ "title": "One Claude, two jobs at once",
+ "summary": "Claude edited my video and cleaned my old PC at the same time. I cut the A-roll myself, wrote one brief, and gave it my old video and an intro as references. It asked permission before touching Chrome, downloads and Premiere, then started editing and pulling music while the cleanup skill ran. This page gives you the brief template.",
+ "kind": "guide",
+ "app": null,
+ "steps": [
+  "Cut your A-roll yourself first.",
+  "Fill in the brief template: paths, references, goal, what is allowed and what is not.",
+  "Paste it into Claude and read every permission prompt. Allow only what the job needs.",
+  "Start the cleanup job in a dry run on the other PC (cleanup skill on the Day 7 page).",
+  "Check the export and the cleanup report before approving anything that deletes."
+ ],
+ "prompts": [
+  {
+   "title": "Edit brief template",
+   "text": "Project: [PROJECT NAME].\nThe A-roll is already cut: [A-ROLL FILE OR SEQUENCE PATH].\nStyle reference (my old video): [OLD VIDEO PATH OR LINK].\nIntro reference: [LINK OR FILE].\nGoal: [LENGTH], [PLATFORM, e.g. 9:16 Instagram reel].\n\nWhat I want: [GRAPHICS / CAPTIONS / B-ROLL / MUSIC / SFX, in your own words].\n\nAllowed: Premiere Pro, Chrome, downloads into [DOWNLOAD FOLDER].\nNot allowed: deleting files, buying anything, posting anywhere, changing my A-roll cut.\nAsk me before installing anything and before using any app for the first time.\nUse only music and footage I'm allowed to use, and list the source of each one.\n\nWhen done: export to [EXPORT FOLDER] and tell me what you did, with timestamps of every change."
+  },
+  {
+   "title": "Safe cleanup running in the background",
+   "text": "While you work on my edit, I also want to free up space on [DRIVE OR PC].\n\nDo a dry run first:\n1. Find large and duplicate files, old installers, temp files and caches.\n2. Group them by folder with sizes.\n3. Mark each item: safe to remove, check with me, or keep.\n\nDo not delete, move or compress anything yet. Never touch [FOLDERS TO PROTECT, e.g. project files, client footage]. Show me the report and wait for my approval for each group."
+  }
+ ],
+ "files": [
+  {
+   "label": "All prompts (Notepad)",
+   "path": "Prompt.txt"
+  },
+  {
+   "label": "Claude skill: drive-cleanup-compress (from Day 7)",
+   "path": "skill-drive-cleanup-compress/SKILL.md"
+  }
+ ],
+ "links": [],
+ "notes": [
+  "Claude asks before it touches each app. Read every prompt and allow only what the job needs.",
+  "Cut the A-roll yourself. Whoever cuts it feels the story.",
+  "The full cleanup skill is on the Day 7 page."
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "day": 4,
+  "title": "After Effects from my phone",
+  "summary": "I wasn't at my laptop. From the Claude app on my phone, I asked Claude on my desktop to build a section in After Effects. It wrote the script, rendered it, checked the frames and fixed its own mistake. The 4-minute composition took about 2 hours. Here are the prompts.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Start a Claude Code session on your PC. Continue it from the Claude app on your phone, so your PC does the work.",
+    "Save a backup of your After Effects project.",
+    "Run Prompt 1 so Claude writes down your style from the sections you already made.",
+    "Run Prompt 2 to build the new section as a JSX script and check its own frames.",
+    "Review the preview yourself before it goes into the edit."
+  ],
+  "prompts": [
+    {
+      "title": "1. Read my After Effects style first",
+      "text": "Open my After Effects project [PATH TO PROJECT.aep]. Change nothing yet.\nLook at the finished sections [1 to 5] and write a style sheet:\n- fonts and sizes\n- colours as hex codes\n- easing (keyframe influence) and typical durations\n- where text sits and the safe margins\n- how elements enter and exit\nSave it as style-sheet.md next to the project and show it to me."
+    },
+    {
+      "title": "2. Build the section with a JSX script and check it",
+      "text": "Using style-sheet.md, build section [6] of [PATH TO PROJECT.aep] to match sections [1 to 5]: same fonts, colours, easing and timing.\nContent of the new section: [WHAT SHOULD BE ON SCREEN, OR PASTE THE SCRIPT LINES]\n\n1. First save a backup copy: [PROJECT NAME]_backup_[DATE].aep.\n2. Write it as an ExtendScript (.jsx) file. Wrap everything in one undo group.\n3. Run it in After Effects.\n4. Render still frames every [2] seconds and check each one for overlaps, text outside the safe area, wrong colours and timing gaps.\n5. Fix any problem you find and run it again before you tell me it's done.\n6. Render a preview and tell me where it is, what you built, and anything I should check by eye."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: ae-jsx-builder",
+      "path": "skill-ae-jsx-builder/SKILL.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "Claude Code (official GitHub)",
+      "url": "https://github.com/anthropics/claude-code"
+    },
+    {
+      "label": "Claude desktop and mobile apps (official)",
+      "url": "https://claude.ai/download"
+    }
+  ],
+  "notes": [
+    "Give it a style reference: a finished section or a frame grab.",
+    "Asking it to render still frames and check them is how it caught its own mistake.",
+    "Save a project backup before it runs any script."
+  ]
+}

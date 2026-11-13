@@ -1,0 +1,44 @@
+{
+  "day": 15,
+  "title": "Claude outreach part 2: free products",
+  "summary": "Update on Day 10: of the 100 interview requests Claude sent, 16 people said yes, and I've done my first interview. Next experiment: Claude lists products I'd love to review, finds each brand's public contact, and drafts a short pitch. I approve every batch. Here are the prompts.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Install the expert-outreach skill (same rules as Day 10).",
+    "Run Prompt 1. It makes the product list and drafts pitches. Nothing is sent.",
+    "Cut anything you wouldn't genuinely use. Approve sending in small batches (Prompt 2).",
+    "Track replies with Prompt 3."
+  ],
+  "prompts": [
+    {
+      "title": "1. Product list and pitch drafts (nothing is sent)",
+      "text": "Use the expert-outreach rules, but for brands.\nAbout me: [YOUR NAME], I make [WHAT CONTENT] for [WHO], on [PLATFORMS], with [REAL FOLLOWER COUNT / AVERAGE VIEWS].\n1. Make a list of [30] products in [YOUR NICHE] that I would genuinely use and review.\n2. For each, find the brand's official PR, creator or partnerships email from their own public pages only. No email found? Skip it. Never guess an address.\n3. Save to products.csv: product, brand, why it fits me, contact email, source page.\n4. Draft a pitch under 90 words for each: who I am, my audience (real numbers), what I'd make, and my rule that the review is honest and the free product is disclosed.\nShow me the list and 3 sample pitches. Do not send anything."
+    },
+    {
+      "title": "2. Send one approved batch",
+      "text": "I removed the products I wouldn't really use. Send batch [1]: the next [10] rows in products.csv.\nShow me the 10 brands and subjects one last time and wait for me to type \"send\".\nSend from my own connected email only, one email per brand. Log the sent time in products.csv. Then stop until I approve the next batch."
+    },
+    {
+      "title": "3. Track replies",
+      "text": "Check my inbox for replies to the pitches in products.csv.\nMark each row: interested, no, asked for more info, or no reply.\nDraft answers for me to approve. Do not send them.\nFor brands with no reply after 7 days, draft ONE short follow-up. Never more than one."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: expert-outreach",
+      "path": "skill-expert-outreach/SKILL.md"
+    }
+  ],
+  "links": [],
+  "notes": [
+    "Be honest about your audience size. Small creators get yeses when the pitch is specific.",
+    "Always disclose free products in your content.",
+    "Public contacts only. You approve every batch. One follow-up after a week, max.",
+    "The expert-outreach skill here is the same one from Day 10."
+  ]
+}

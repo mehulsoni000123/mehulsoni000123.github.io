@@ -1,0 +1,27 @@
+Day 5: Free AI credits I almost missed | free from @mehuledits.ai
+
+===== 1. FIND UNUSED CREDITS IN MY TOOLS (CHECKLIST) =====
+
+Help me find free or unused AI credits in tools I already have. Do not ask me for any passwords or API keys.
+
+My tools and plans: [LIST THEM, e.g. "Claude Pro, a cloud account, a video AI tool"]
+
+For each tool:
+1. Tell me where its Usage or Billing page usually is, and what words to look for there (credits, free tier, promo, included usage).
+2. Tell me if plans like mine sometimes include extra usage (API credits, cloud credits, extra models) and how I can check that on the official page.
+3. Tell me how to set a monthly spend cap or alert in that tool.
+Then give me a simple checklist table: tool, where to look, what I found (blank for me to fill), expiry date, spend cap set yes/no.
+If you are not sure a specific offer exists today, say so. Offers change often.
+
+===== 2. CHECK A CREDIT OFFER BEFORE I CONNECT IT =====
+
+I found this credit offer: [PASTE THE OFFER TEXT OR DESCRIBE IT, NOT YOUR KEY].
+Before I connect it to any tool, tell me:
+1. Is this from the official company page? What should I check to be sure?
+2. What happens when the credits run out: does it stop, or start charging my card?
+3. When do the credits expire?
+4. How do I set a spend limit so it never becomes a bill?
+5. Should I make a separate key just for this tool, and how do I switch it off later?
+Never ask me to paste the key itself into this chat.
+
+More free guides: mehulsoni000123.github.io

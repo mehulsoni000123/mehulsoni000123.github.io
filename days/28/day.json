@@ -1,0 +1,24 @@
+{
+  "day": 28,
+  "title": "Building my own Jarvis: Junior",
+  "summary": "I'm building my own Jarvis, called Junior, to run my whole computer. The idea: build on top of Claude, Gemini and ChatGPT (I have Pro on all three), with shared memory, deciding which model to run, all by voice. Version one, built with ChatGPT, was useless. Now I'm building it with Claude Code using about $200 of free credits that expire in November. If it works, I'll share it.",
+  "kind": "story",
+  "app": null,
+  "steps": [],
+  "prompts": [
+    {
+      "title": "Bonus: plan your own assistant (architecture only)",
+      "text": "I want to plan a personal voice assistant for my computer. Don't write code yet; I only want the architecture plan.\n\nWhat I have: [AI SUBSCRIPTIONS OR APIs YOU HAVE], [WINDOWS / MAC].\nWhat I want it to do: [YOUR TOP 5 TASKS].\n\nPlan:\n1. The main parts: voice input, a router that picks which model to use for each task, shared memory, the tools it can use on my computer.\n2. How the router decides between models (cost, speed, task type).\n3. What goes in shared memory and what must never be stored (passwords, keys, private files).\n4. Safety rules: it must ask me before deleting, sending, posting, spending money or touching accounts.\n5. A version 1 I can build in a weekend, and what to add later.\nKeep it simple and explain it in plain words."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    }
+  ],
+  "links": [],
+  "notes": [
+    "Junior is a work in progress. Version one did not work. Results will come in a later reel."
+  ]
+}

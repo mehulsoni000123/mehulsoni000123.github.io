@@ -1,0 +1,34 @@
+Day 9: 8 years of editing knowledge as Claude skills | free from @mehuledits.ai
+
+===== 1. CUT LIST FOR MY TALKING-HEAD A-ROLL =====
+
+Use the aroll-trim-pacing rules. Here is my raw talking-head transcript with timestamps: [ATTACH TRANSCRIPT, word-level if possible].
+1. Tell me the one-sentence promise of this video. The first 3 seconds must state or show it.
+2. Where I repeat a line, keep the last complete, confident take, unless an earlier one has clearly better energy.
+3. Cut on silences, never mid-word. Leave 80 to 120 ms of air before and after each line.
+4. Remove false starts, filler words and "so, um" openers. Keep a laugh or reaction if it adds personality.
+5. Never end mid-sentence. Value first, then the call to action.
+Output a cut list table: in, out, line text, reason. Then list moments that need B-roll, a punch-in or a graphic (at least every 4 seconds), with timestamps.
+Do not edit my project. This is a plan for me to review.
+
+===== 2. SCREEN-RECORDING ZOOMS IN AFTER EFFECTS =====
+
+Use the screen-recording-zoom-build skill. My screen recording is [FILE NAME], [3840x2160], and it is in [PATH TO PROJECT.aep].
+Moments to show: [LIST: time, what to zoom on, highlight or lower third text]
+1. Save a backup of the project first.
+2. Keep the comp at the source size. Write one helper .jsx with frame(window), addRect and setKeys.
+3. Make each beat {start, dur, window:[x,y,w,h], ease}. Zoom gently (max 2.2x), eased, with 0.4 s hold after each move. Never show the edge of the recording.
+4. Highlights: rounded rectangles that keep the same stroke width while zooming. Lower thirds: title plus subline, 0.3 s fade or slide, inside title-safe.
+5. Render a still at every beat, check framing, text and safe areas, fix problems and re-run.
+Tell me what you built and which beats I should check by eye.
+
+===== 3. TURN MY EDITING KNOW-HOW INTO A CLAUDE SKILL =====
+
+I want to turn one thing I do well as an editor into a Claude skill: [e.g. "how I pace a 30-second reel" / "how I pick B-roll" / "how I name and sort footage"].
+Interview me with 6 to 8 questions, one at a time: what goes in, the exact steps, my rules that must never break, common mistakes, and what the finished output looks like.
+Then write a SKILL.md with:
+- a top block with name: (lowercase-with-dashes) and description: (what it does and when to use it)
+- sections: Inputs, Rules, Steps, Output, Never
+Keep it short and specific. Then tell me where to save it: ~/.claude/skills/[NAME]/SKILL.md
+
+More free guides: mehulsoni000123.github.io

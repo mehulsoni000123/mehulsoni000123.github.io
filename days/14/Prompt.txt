@@ -1,0 +1,24 @@
+Day 14: 2 things I never give to AI | free from @mehuledits.ai
+
+===== 1. SORT MY SHOOT INTO BINS =====
+
+Look at every video clip in [SHOOT FOLDER].
+1. List each clip: name, duration, resolution, fps, camera model (from metadata) and created time.
+2. Sample 3 frames per clip (at 10%, 50% and 90%) and classify it:
+   - A-roll: a person talking to camera, stable framing, longer, with speech
+   - Drone: high aerial view, DJI metadata, or a sky or rooftop view
+   - Close-up: a detail or macro shot filling the frame
+   - B-roll: everything else that shows the place
+   - Other: if you're not sure, and say why
+3. In Premiere, create bins with those names in [PROJECT NAME] and import each clip into its bin. If Premiere isn't connected, write a CSV: clip, bin.
+4. Never move, rename or delete the source files.
+Give me a table: count and total duration per bin, plus the clips you were unsure about.
+
+===== 2. MUSIC SHORTLIST (I PICK THE FINAL TRACK) =====
+
+Look through my music library in [MUSIC FOLDER].
+The video: [TYPE, e.g. luxury home listing], length [SECONDS] s, mood [e.g. calm, premium, warm].
+Give me a shortlist of [8] tracks that fit: file name, length, estimated BPM, mood, and why it fits.
+Don't place music in my edit and don't download or buy anything. I will listen and choose myself.
+
+More free guides: mehulsoni000123.github.io

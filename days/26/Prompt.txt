@@ -1,0 +1,28 @@
+Day 26: Free Claude via Agent Router: I tested it | free from @mehuledits.ai
+
+===== SAFETY CHECK A 'FREE AI CREDITS' OFFER =====
+
+I found an offer for free AI credits: [NAME OF SERVICE + WHAT IT CLAIMS]. Its page: [LINK].
+
+Before I sign up, help me check it safely:
+1. Who runs it, and is it an official provider or a third-party router/reseller?
+2. What it asks for: accounts (GitHub, Google), permissions, payment details, API keys. Flag anything that's more than it needs.
+3. Where my prompts and files would go, and what its privacy policy and terms say about using or storing them.
+4. Which models it really gives access to, and any limits on usage or uptime.
+5. A list of red flags and a simple verdict: safe to test, test with care, or avoid.
+
+Don't sign up or install anything for me. Never ask me to paste keys or passwords here.
+
+===== RELIABILITY TEST BEFORE TRUSTING IT =====
+
+I'm testing a free AI service with a throwaway project: [TEST FOLDER WITH NOTHING PRIVATE].
+
+Plan a small reliability test:
+1. Three short tasks (under 5 minutes each) and one longer task (about 30 to 60 minutes).
+2. For each, what I should log: start time, end time, did it finish, connection drops, errors, which model actually answered.
+3. A simple table template for my results.
+4. What result would mean it's good enough for real work and what would mean it isn't.
+
+The test must not touch my real projects, accounts or files outside the test folder.
+
+More free guides: mehulsoni000123.github.io

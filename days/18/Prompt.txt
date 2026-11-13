@@ -1,0 +1,25 @@
+Day 18: Free YouTube downloader (Sonika Video Downloader) | free from @mehuledits.ai
+
+===== BREAK DOWN A REFERENCE VIDEO =====
+
+I downloaded a reference video for my edit: [VIDEO FILE PATH OR DESCRIBE IT / ATTACH SCREENSHOTS].
+
+Break it down so I can learn from it:
+1. A shot list with rough timestamps: shot type, what's on screen, text on screen.
+2. The pacing: average cut length, where it speeds up or slows down.
+3. Graphics and transitions used, and how I could rebuild each one in [PREMIERE PRO / YOUR EDITOR].
+4. What makes the hook work in the first 3 seconds.
+
+Keep it short and practical. Don't copy the creator's content; give me ideas I can adapt to my own footage.
+
+===== REDESIGN MY APP'S UI FROM A REFERENCE IMAGE =====
+
+I have a small app I built: [APP FOLDER PATH]. I made a UI reference image: [ATTACH IMAGE].
+
+Redesign the app's interface to match the reference: layout, colors, spacing, fonts and buttons. Rules:
+- Keep every feature working exactly as it does now.
+- Change only UI code. Show me the plan and the list of files you will change before editing.
+- Make a backup or work on a new git branch first.
+- After the change, run the app and tell me how to test each button.
+
+More free guides: mehulsoni000123.github.io

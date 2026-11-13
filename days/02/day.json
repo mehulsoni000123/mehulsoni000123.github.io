@@ -1,0 +1,48 @@
+{
+  "day": 2,
+  "title": "AI fixed my Premiere subtitles",
+  "summary": "I told Claude \"Premiere is open, do the subtitles\". My notes had spelling mistakes, but it fixed every word, and even caught the auto-captions hearing \"pottery\" when I said \"powder room\". Here are the prompts for the quick way and the hands-free way.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "In Premiere, run Speech to Text and export the captions as an .srt file.",
+    "Give Claude the .srt plus your script or notes, and use Prompt 1.",
+    "Import the corrected .srt back into Premiere (File > Import).",
+    "Apply your own caption style. Save it once with Prompt 3 so every video matches.",
+    "Want it hands-free? Use the Claude desktop app with computer use and Prompt 2."
+  ],
+  "prompts": [
+    {
+      "title": "1. Fix my auto-captions (.srt) against my script",
+      "text": "I'm attaching two things: my auto-generated subtitle file [FILE NAME.srt] and my script or notes [SCRIPT FILE]. My notes may have typos. Use them for meaning, names and numbers, not exact spelling.\n\nFix the SRT:\n- Correct every misheard word against the script, including names, places, numbers and brand terms.\n- Keep every cue number and timestamp exactly as it is. Only change the text.\n- Max 42 characters per line, 2 lines max. Don't end a line on \"a\", \"the\" or \"to\".\n- If a part is not clear in the script either, write [inaudible]. Do not invent words.\n- Check that cues are numbered in order and no cue overlaps the next.\n\nGive me:\n1. The full corrected .srt, ready to save.\n2. A change list: cue number: old text -> new text."
+    },
+    {
+      "title": "2. Hands-free: Claude does the subtitles inside Premiere",
+      "text": "Premiere Pro is open with my sequence [SEQUENCE NAME]. Do the subtitles for me.\n1. Run Speech to Text (transcribe the sequence) and create captions.\n2. Correct the captions against my script: [PASTE SCRIPT OR NOTES]. Fix names, places and numbers. Keep the timing.\n3. Max 42 characters per line, 2 lines max.\n4. Do not delete or move any clips, and do not change anything else in the timeline.\n5. Save a copy of the project as [PROJECT NAME]_captions before you start.\nWhen finished, list every word you corrected so I can check it."
+    },
+    {
+      "title": "3. Make my caption style guide (do this once)",
+      "text": "Help me write a caption style guide I can give you before every video.\nAsk me these one at a time: font, font size, text colour, highlight colour, outline or box, position on screen, max characters per line, max lines, casing (normal or ALL CAPS), emoji yes or no, and any words that must always be spelled a certain way (names, brands, places).\nThen write it as a short text file called caption-style.txt that I can paste into future chats."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    },
+    {
+      "label": "Claude skill: srt-caption-fixer",
+      "path": "skill-srt-caption-fixer/SKILL.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "Claude desktop and mobile apps (official)",
+      "url": "https://claude.ai/download"
+    }
+  ],
+  "notes": [
+    "Hands-free mode is slower than the .srt method, but you can walk away.",
+    "Always read the change list once. AI can still pick the wrong word when two sound alike."
+  ]
+}

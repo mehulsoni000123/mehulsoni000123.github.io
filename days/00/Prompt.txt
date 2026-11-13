@@ -1,0 +1,22 @@
+Day 0: 30 days with Claude (Trailer) | free from @mehuledits.ai
+
+===== INSTALL A SKILL FROM THIS SITE =====
+
+I want to install a Claude skill. The SKILL.md text is pasted below.
+1. Read the "name:" line at the top of the file.
+2. Create the folder ~/.claude/skills/[SKILL NAME]/ (on Windows: C:\Users\[MY USERNAME]\.claude\skills\[SKILL NAME]\).
+3. Save the text below as SKILL.md inside that folder, exactly as it is. Do not change any rules in it.
+4. Tell me the full path where you saved it, and one example sentence I can type to use this skill.
+Do not install or run anything else.
+
+[PASTE THE SKILL.MD TEXT HERE]
+
+===== MY 3 RULES FOR ANY REAL PROJECT (PASTE AT THE START OF A SESSION) =====
+
+Before we start, follow these rules for this whole session:
+1. Ask me before you delete, send, post, buy or pay for anything. Show me exactly what will happen first.
+2. If my request is a one-line wish, turn it into a short written brief (goal, what "done" means, what you must not touch) and ask me to confirm it before you start.
+3. When you finish, tell me what you changed, where the files are, and what I should check myself before it goes to a client.
+Reply "OK" and ask me for today's task.
+
+More free guides: mehulsoni000123.github.io

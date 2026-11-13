@@ -1,0 +1,28 @@
+Day 12: Claude built my own map animation tool | free from @mehuledits.ai
+
+===== 1. BUILD MY OWN MAP ANIMATION APP (ONE TIME) =====
+
+Build me a small Tauri desktop app for map animations. I can't code, so keep it simple and explain how to run it.
+Input: a JSON file with places (name, lat, lng), an optional route, and a theme (colours, font, pin style).
+Map: free map tiles, street or satellite. Show the correct attribution for the tile provider on screen.
+Output: an MP4 or PNG sequence at 1080x1920 and 1920x1080, with a smooth eased camera move between places, pins and labels in my theme.
+Work only inside [PROJECT FOLDER]. Ask me before installing anything. When done, show me a test render with 2 places.
+
+===== 2. VOICE NOTES TO MAP SHOT LIST =====
+
+Here are my voice notes from cutting the edit: [ATTACH AUDIO FILES OR PASTE TRANSCRIPT].
+1. Transcribe them. For each note, list: timecode in the edit, place or places, what to show (pin, route, area, satellite view), and duration.
+2. Find the lat/lng for each place. Never invent a location. If a place is unclear or has two matches, ask me.
+3. Save it as maps.json: {shots:[{id, places:[{name,lat,lng}], route, style: "satellite" or "street", dur}]}.
+Show me the shot list as a table and wait for my OK.
+
+===== 3. RENDER AND CHECK THE MAPS =====
+
+Render every shot in maps.json with my map app. Size: [1080x1920 / 1920x1080]. Frame rate: [30] fps. Theme: [COLOURS, FONT].
+Check each one:
+- labels readable at phone size and inside the safe area
+- place names spelled exactly as in my notes or the official source
+- tile attribution visible
+Name files map_<shot id>_<place>.mp4 and give me the list in order with timecodes.
+
+More free guides: mehulsoni000123.github.io

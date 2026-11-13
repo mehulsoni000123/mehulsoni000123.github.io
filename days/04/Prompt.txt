@@ -1,0 +1,26 @@
+Day 4: After Effects from my phone | free from @mehuledits.ai
+
+===== 1. READ MY AFTER EFFECTS STYLE FIRST =====
+
+Open my After Effects project [PATH TO PROJECT.aep]. Change nothing yet.
+Look at the finished sections [1 to 5] and write a style sheet:
+- fonts and sizes
+- colours as hex codes
+- easing (keyframe influence) and typical durations
+- where text sits and the safe margins
+- how elements enter and exit
+Save it as style-sheet.md next to the project and show it to me.
+
+===== 2. BUILD THE SECTION WITH A JSX SCRIPT AND CHECK IT =====
+
+Using style-sheet.md, build section [6] of [PATH TO PROJECT.aep] to match sections [1 to 5]: same fonts, colours, easing and timing.
+Content of the new section: [WHAT SHOULD BE ON SCREEN, OR PASTE THE SCRIPT LINES]
+
+1. First save a backup copy: [PROJECT NAME]_backup_[DATE].aep.
+2. Write it as an ExtendScript (.jsx) file. Wrap everything in one undo group.
+3. Run it in After Effects.
+4. Render still frames every [2] seconds and check each one for overlaps, text outside the safe area, wrong colours and timing gaps.
+5. Fix any problem you find and run it again before you tell me it's done.
+6. Render a preview and tell me where it is, what you built, and anything I should check by eye.
+
+More free guides: mehulsoni000123.github.io

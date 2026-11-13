@@ -1,0 +1,18 @@
+Day 28: Building my own Jarvis: Junior | free from @mehuledits.ai
+
+===== BONUS: PLAN YOUR OWN ASSISTANT (ARCHITECTURE ONLY) =====
+
+I want to plan a personal voice assistant for my computer. Don't write code yet; I only want the architecture plan.
+
+What I have: [AI SUBSCRIPTIONS OR APIs YOU HAVE], [WINDOWS / MAC].
+What I want it to do: [YOUR TOP 5 TASKS].
+
+Plan:
+1. The main parts: voice input, a router that picks which model to use for each task, shared memory, the tools it can use on my computer.
+2. How the router decides between models (cost, speed, task type).
+3. What goes in shared memory and what must never be stored (passwords, keys, private files).
+4. Safety rules: it must ask me before deleting, sending, posting, spending money or touching accounts.
+5. A version 1 I can build in a weekend, and what to add later.
+Keep it simple and explain it in plain words.
+
+More free guides: mehulsoni000123.github.io

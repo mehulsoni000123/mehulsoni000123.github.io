@@ -1,0 +1,26 @@
+Day 15: Claude outreach part 2: free products | free from @mehuledits.ai
+
+===== 1. PRODUCT LIST AND PITCH DRAFTS (NOTHING IS SENT) =====
+
+Use the expert-outreach rules, but for brands.
+About me: [YOUR NAME], I make [WHAT CONTENT] for [WHO], on [PLATFORMS], with [REAL FOLLOWER COUNT / AVERAGE VIEWS].
+1. Make a list of [30] products in [YOUR NICHE] that I would genuinely use and review.
+2. For each, find the brand's official PR, creator or partnerships email from their own public pages only. No email found? Skip it. Never guess an address.
+3. Save to products.csv: product, brand, why it fits me, contact email, source page.
+4. Draft a pitch under 90 words for each: who I am, my audience (real numbers), what I'd make, and my rule that the review is honest and the free product is disclosed.
+Show me the list and 3 sample pitches. Do not send anything.
+
+===== 2. SEND ONE APPROVED BATCH =====
+
+I removed the products I wouldn't really use. Send batch [1]: the next [10] rows in products.csv.
+Show me the 10 brands and subjects one last time and wait for me to type "send".
+Send from my own connected email only, one email per brand. Log the sent time in products.csv. Then stop until I approve the next batch.
+
+===== 3. TRACK REPLIES =====
+
+Check my inbox for replies to the pitches in products.csv.
+Mark each row: interested, no, asked for more info, or no reply.
+Draft answers for me to approve. Do not send them.
+For brands with no reply after 7 days, draft ONE short follow-up. Never more than one.
+
+More free guides: mehulsoni000123.github.io

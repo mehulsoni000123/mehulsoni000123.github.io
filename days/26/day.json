@@ -1,0 +1,39 @@
+{
+  "day": 26,
+  "title": "Free Claude via Agent Router: I tested it",
+  "summary": "Lots of people are showing 'free Claude' through Agent Router. I tested it on my own PC: a new account went through (my GitHub is a year old), I got credits and it even ran. But Opus 5.5 didn't run on it, and connections dropped whenever usage spiked. It's not a scam, but you can't rely on it for real work. This page gives my honest notes and a prompt to safely test any 'free AI credits' offer.",
+  "kind": "guide",
+  "app": null,
+  "steps": [
+    "Before signing up for any free-credits offer, run the safety check prompt.",
+    "Use a test project with nothing private in it.",
+    "Run a short task first, then a longer one, and note how often it fails.",
+    "Never leave an important task running unattended on it.",
+    "Keep your paid or official setup for real work."
+  ],
+  "prompts": [
+    {
+      "title": "Safety check a 'free AI credits' offer",
+      "text": "I found an offer for free AI credits: [NAME OF SERVICE + WHAT IT CLAIMS]. Its page: [LINK].\n\nBefore I sign up, help me check it safely:\n1. Who runs it, and is it an official provider or a third-party router/reseller?\n2. What it asks for: accounts (GitHub, Google), permissions, payment details, API keys. Flag anything that's more than it needs.\n3. Where my prompts and files would go, and what its privacy policy and terms say about using or storing them.\n4. Which models it really gives access to, and any limits on usage or uptime.\n5. A list of red flags and a simple verdict: safe to test, test with care, or avoid.\n\nDon't sign up or install anything for me. Never ask me to paste keys or passwords here."
+    },
+    {
+      "title": "Reliability test before trusting it",
+      "text": "I'm testing a free AI service with a throwaway project: [TEST FOLDER WITH NOTHING PRIVATE].\n\nPlan a small reliability test:\n1. Three short tasks (under 5 minutes each) and one longer task (about 30 to 60 minutes).\n2. For each, what I should log: start time, end time, did it finish, connection drops, errors, which model actually answered.\n3. A simple table template for my results.\n4. What result would mean it's good enough for real work and what would mean it isn't.\n\nThe test must not touch my real projects, accounts or files outside the test folder."
+    }
+  ],
+  "files": [
+    {
+      "label": "All prompts (Notepad)",
+      "path": "Prompt.txt"
+    }
+  ],
+  "links": [],
+  "notes": [
+    "Honest result: sign-up worked and it ran, but Opus 5.5 did not run on it.",
+    "Connections dropped when usage on the service spiked. Not reliable for work.",
+    "Set a task and come back 6 hours later: in my test there was maybe a 10% chance it was done.",
+    "It's not fake in the sense of fooling you. It's just not dependable.",
+    "Third-party routers see your prompts and files. Don't send anything private through them.",
+    "This page doesn't promote any free-credits service."
+  ]
+}
