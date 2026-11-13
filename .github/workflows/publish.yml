@@ -1,0 +1,66 @@
+name: Publish site
+
+# Builds the site and releases vault guides when their reel's posting time passes.
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.cmp.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get private vault (upcoming guides)
+        env:
+          VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+        run: |
+          if [ -n "$VAULT_TOKEN" ]; then
+            git clone --depth 1 "https://x-access-token:${VAULT_TOKEN}@github.com/mehulsoni000123/sonika-vault.git" vault || echo "Vault not reachable, publishing public days only"
+          else
+            echo "No VAULT_TOKEN secret, publishing public days only"
+          fi
+
+      - name: Build
+        run: python3 scripts/build.py --vault vault --out _site
+
+      - name: Anything new to release?
+        id: cmp
+        run: |
+          live=$(curl -fsS "https://mehulsoni000123.github.io/released.txt?t=$(date +%s)" || echo none)
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$live" != "$(cat _site/released.txt)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nothing new to release."
+          fi
+
+      - if: steps.cmp.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
