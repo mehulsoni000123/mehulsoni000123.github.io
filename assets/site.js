@@ -24,6 +24,53 @@ const CONFIG = {
       drive: "",
       source: "https://github.com/mehulsoni000123/SonikaFrameFinder",
       day: 23
+    },
+    {
+      id: "converter",
+      name: "Sonika Converter",
+      status: "v1.0.0 · Windows 11 · Free",
+      blurb: "One wheel for everyday conversions: video to audio, transcripts, PDF tools, Word and Office to PDF, video and image tools. Works fully offline.",
+      chips: ["Radial wheel", "Video to audio", "PDF tools", "Transcripts", "Offline", "Open source"],
+      download: "https://github.com/mehulsoni000123/SonikaConverter/releases/latest/download/Sonika-Converter-1.0.0-win-x64.zip",
+      note: "Unzip anywhere and open Sonika Converter.exe. No installer needed.",
+      size: "a zip, about 176 MB",
+      source: "https://github.com/mehulsoni000123/SonikaConverter"
+    },
+    {
+      id: "taskmanager",
+      name: "Sony Task Manager",
+      status: "v1.0.0 · Windows 10/11 · Free",
+      blurb: "A small glass widget that keeps background apps under control. It groups what is running and closes what you don't need, with a safety wall so Windows and your unsaved work stay safe.",
+      chips: ["Glass widget", "Modes", "Safety wall", "Open source"],
+      download: "https://github.com/mehulsoni000123/SonyTaskManager/releases/latest/download/Sony-Task-Manager-1.0.0-win-x64.zip",
+      note: "Unzip anywhere and open Sony Task Manager.exe. No installer needed.",
+      size: "a zip, about 169 MB",
+      source: "https://github.com/mehulsoni000123/SonyTaskManager"
+    },
+    {
+      id: "sender",
+      name: "Sony Ka Sender",
+      status: "v1.0.0 · Android + Windows · Free",
+      blurb: "Flick photos, videos and files from your phone to your PC over your own Wi-Fi. Nothing goes through the internet.",
+      chips: ["Phone to PC", "Same Wi-Fi", "No cloud", "Open source"],
+      download: "https://github.com/mehulsoni000123/SonyKaSender/releases/latest/download/SonyKaSender.apk",
+      dlLabel: "Download Android app (APK)",
+      download2: "https://github.com/mehulsoni000123/SonyKaSender/releases/latest/download/Sony-Ka-Sender-PC-1.0.0.zip",
+      dl2Label: "Download PC receiver (zip)",
+      note: "You need both: the APK on your phone and the PC receiver (needs Node.js). Steps are on the source page.",
+      size: "APK under 1 MB",
+      source: "https://github.com/mehulsoni000123/SonyKaSender"
+    },
+    {
+      id: "storyteller",
+      name: "Sonika Storyteller",
+      status: "Source code · Windows · Free",
+      blurb: "Reads your script aloud in your own cloned voice, fully offline on your PC, using the open-source Chatterbox model. Developer-style: needs Python and ideally an NVIDIA card.",
+      chips: ["Your own voice", "English + Hindi", "Offline", "Open source"],
+      download: "https://github.com/mehulsoni000123/SonikaStoryteller",
+      dlLabel: "Get it on GitHub",
+      note: "No installer. The setup steps are in the README on GitHub. Only clone your own voice, or a voice you have permission to use.",
+      source: "https://github.com/mehulsoni000123/SonikaStoryteller"
     }
   ],
   donate: { upiQr: "upi-qr.png", holder: "MEHUL SONI", razorpay: "" },
@@ -56,17 +103,21 @@ $("#ftr").innerHTML = `<div class="wrap foot">
 /* app cards (home + downloads page) */
 function appCard(a) {
   const drive = a.drive ? `<a class="btn" href="${esc(a.drive)}" target="_blank" rel="noopener">Download from Google Drive</a>` : "";
+  const second = a.download2 ? `<a class="btn primary" href="${esc(a.download2)}">${esc(a.dl2Label || "Download")}</a>` : "";
+  const how = a.day != null ? `<a class="btn ghost" href="guide.html?d=${a.day}">How it works</a>` : "";
+  const fine = a.note
+    ? `${esc(a.note)}${a.size ? " (" + esc(a.size) + ")" : ""} Windows may warn on first run because the app isn't code-signed: click <b>More info → Run anyway</b>.`
+    : `The installer downloads straight away (${esc(a.size)}). Windows may warn on first run because the app isn't code-signed: click <b>More info → Run anyway</b>.`;
   return `<article class="app" id="${a.id}"><div class="app-in">
     <span class="status"><span class="rec" aria-hidden="true"></span>${esc(a.status)}</span>
     <h3>${esc(a.name)}</h3>
     <p class="sub" style="margin:0">${esc(a.blurb)}</p>
     <div class="chips">${a.chips.map(c => `<span class="chip">${esc(c)}</span>`).join("")}</div>
     <div class="dl">
-      <a class="btn primary" href="${esc(a.download)}">Download for Windows</a>
-      <div class="dl-row">${drive}<a class="btn ghost" href="${esc(a.source)}" target="_blank" rel="noopener">Source code</a>
-      <a class="btn ghost" href="guide.html?d=${a.day}">How it works</a></div>
+      <a class="btn primary" href="${esc(a.download)}">${esc(a.dlLabel || "Download for Windows")}</a>${second}
+      <div class="dl-row">${drive}<a class="btn ghost" href="${esc(a.source)}" target="_blank" rel="noopener">Source code</a>${how}</div>
     </div>
-    <p class="fine">The installer downloads straight away (${esc(a.size)}). Windows may warn on first run because the app isn't code-signed: click <b>More info → Run anyway</b>.</p>
+    <p class="fine">${fine}</p>
   </div></article>`;
 }
 const appsEl = $("#appList");
